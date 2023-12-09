@@ -14,25 +14,25 @@ Existem diferentes níveis de confiança, comummente expressos em termos de porc
 
 ### Fórmula Geral:
 
-$ \text{IC} = \text{Estimativa Pontual} \pm \text{Margem de Erro} $
+$\text{IC} = \text{Estimativa Pontual} \pm \text{Margem de Erro}$
 
 A margem de erro é calculada com base no desvio padrão da amostra e no tamanho da amostra, juntamente com um valor crítico associado ao nível de confiança desejado.
 
 ### Exemplo 1:
 
-A média populacional está estimada em $ \mu = 50 $ com um desvio padrão amostral de $ \sigma = 10 $. Com uma amostra de tamanho $ n = 30 $ e um nível de confiança de 95%, o intervalo de confiança para a média é:
+A média populacional está estimada em $\mu = 50$ com um desvio padrão amostral de $\sigma = 10$. Com uma amostra de tamanho $n = 30$ e um nível de confiança de 95%, o intervalo de confiança para a média é:
 
 ```
 Na tabela Z, você procuraria o valor que corresponde a uma área acumulada de 0.975 (considerando 2.5% de cada cauda para obter 95% no meio). Este valor é aproximadamente 1.96.
 
-Portanto, para um intervalo de confiança de 95%, você usaria $ Z = 1.96 $ para calcular a margem de erro em torno da sua estimativa pontual.
+Portanto, para um intervalo de confiança de 95%, você usaria $Z = 1.96$ para calcular a margem de erro em torno da sua estimativa pontual.
 ```
 
-$ \bar{x} \pm Z \left( \frac{\sigma}{\sqrt{n}} \right) $
+$\bar{x} \pm Z \left( \frac{\sigma}{\sqrt{n}} \right)$
 
 Substituindo os valores conhecidos:
 
-$ 50 \pm 1.96 \left( \frac{10}{\sqrt{30}} \right) $
+$50 \pm 1.96 \left( \frac{10}{\sqrt{30}} \right)$
 
 
 Esse é um exemplo básico, e os cálculos específicos podem variar dependendo do tipo de intervalo de confiança (por exemplo, para proporções ou desvios padrão) e da distribuição subjacente dos dados.
@@ -129,7 +129,7 @@ Estes são apenas alguns exemplos e a escolha do intervalo de confiança depende
 
 #### Fórmula Geral:
 
-$  \bar{x} \pm Z \left(\displaystyle \frac{s}{\sqrt{n}} \right) $
+$\bar{x} \pm Z \left(\displaystyle \frac{s}{\sqrt{n}} \right)$
 
 - $\bar{x}$: média da amostra
 - $Z$: valor crítico da distribuição normal ou t de Student (dependendo do tamanho da amostra e do nível de confiança)
@@ -150,20 +150,24 @@ Suponha que um pesquisador coletou dados sobre os salários de 100 Vendedores. O
 - Média Amostral ($\bar{x}$): R$5.800,00
 
 **1. Fórmula do Intervalo de Confiança para Média:**
-$ \text{Intervalo de Confiança} = \bar{x} \pm Z \left(\frac{\sigma}{\sqrt{n}}\right) $
+
+$\text{Intervalo de Confiança} = \bar{x} \pm Z \left(\frac{\sigma}{\sqrt{n}}\right)$
 
 Onde $Z$ é o valor crítico da distribuição normal padrão associado ao nível de confiança escolhido.
 
 **2. Valor Crítico ($Z$):**
+
 Para um intervalo de confiança de 95%, o valor crítico é $Z = 1,96$.
 
 **3. Substituindo Valores:**
-$ \text{Intervalo de Confiança} = 5.800 \pm 1,96 \left(\frac{1.100}{\sqrt{100}}\right) $
 
-$ \text{Intervalo de Confiança} = 5.800 \pm 1,96 \times 110 $
+$\text{Intervalo de Confiança} = 5.800 \pm 1,96 \left(\frac{1.100}{\sqrt{100}}\right)$
+
+$\text{Intervalo de Confiança} = 5.800 \pm 1,96 \times 110$
 
 **4. Calculando o Intervalo:**
-$ \text{Intervalo de Confiança} = \ $ [R$5.584.40 ;  R$6.015,60] 
+
+$\text{Intervalo de Confiança} =\$  [R$5.584.40 ;  R$6.015,60] 
 
 **Interpretação:**
 Com 95% de confiança, podemos afirmar que a média salarial dos Vendedores está estimada para estar entre R$5.584.40 e R$6.015,60. Isso significa que se coletássemos várias amostras e calculássemos intervalos de confiança para a média, esperaríamos que 95% desses intervalos incluíssem a verdadeira média salarial da população de Vendedores.
@@ -207,7 +211,7 @@ Intervalo de Confiança (95%): (5584.403961700594, 6015.596038299406)
 
 #### Fórmula Geral:
 
-$ \hat{p} \pm Z \sqrt{\displaystyle \frac{\hat{p}(1-\hat{p})}{n}} $
+$\hat{p} \pm Z \sqrt{\displaystyle \frac{\hat{p}(1-\hat{p})}{n}}$
 
 - $\hat{p}$: proporção da amostra
 - $Z$: valor crítico da distribuição normal
@@ -227,18 +231,18 @@ Suponha que uma pesquisa eleitoral tenha sido realizada para uma eleição de ca
 
 **1. Proporção de Apoio ao Candidato A:**
 
-$ \text{Proporção} (\hat{p}) =\displaystyle  \frac{\text{Número de votos para o Candidato A}}{\text{Tamanho da amostra total}} $
+$\text{Proporção} (\hat{p}) =\displaystyle  \frac{\text{Número de votos para o Candidato A}}{\text{Tamanho da amostra total}}$
 
-$ \hat{p} = \displaystyle \frac{650}{1000} = 0,65 $
+$\hat{p} = \displaystyle \frac{650}{1000} = 0,65$
 
 
 
 
 **2. Erro Padrão da Proporção:**
 
-$ SE(\hat{p}) = \sqrt{\displaystyle \frac{\hat{p}(1 - \hat{p})}{n}} $
+$SE(\hat{p}) = \sqrt{\displaystyle \frac{\hat{p}(1 - \hat{p})}{n}}$
 
-$ SE(\hat{p}) = \sqrt{\displaystyle \frac{0,65 \times (1 - 0,65)}{1000}} $
+$SE(\hat{p}) = \sqrt{\displaystyle \frac{0,65 \times (1 - 0,65)}{1000}}$
 
 **3. Valor Crítico Z para um Intervalo de Confiança de 95%:**
 
@@ -246,11 +250,11 @@ Para um intervalo de confiança de 95%, o valor crítico Z é aproximadamente 1,
 
 **4. Intervalo de Confiança para a Proporção:**
 
-$ \text{Intervalo de Confiança} = \hat{p} \pm Z \times SE(\hat{p}) $
+$\text{Intervalo de Confiança} = \hat{p} \pm Z \times SE(\hat{p})$
 
 Substituindo os valores conhecidos:
 
-$ \text{Intervalo de Confiança} = 0,65 \pm 1,96 \times \sqrt{\displaystyle \frac{0,65 \times (1 - 0,65)}{1000}} $
+$\text{Intervalo de Confiança} = 0,65 \pm 1,96 \times \sqrt{\displaystyle \frac{0,65 \times (1 - 0,65)}{1000}}$
 
 **5. Resolução em Python:**
 
