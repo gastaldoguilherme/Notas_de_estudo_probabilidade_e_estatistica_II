@@ -40,32 +40,33 @@ A distribuição de Poisson é um modelo de probabilidade discreta que descreve 
 
 1. **Função de Probabilidade (PMF):**
 
-   $ P(X = k) = \displaystyle\frac{e^{-\lambda} \cdot \lambda^k}{k!} $
+   $P(X = k) = \displaystyle\frac{e^{-\lambda} \cdot \lambda^k}{k!}$
    - **Variáveis:**
-     - $ X $: Número de eventos raros
-     - $ k $: Número específico de eventos desejados
-     - $ \lambda $: Taxa média de ocorrência de eventos por unidade de tempo ou espaço
+     - $X$: Número de eventos raros
+     - $k$: Número específico de eventos desejados
+     - $\lambda$: Taxa média de ocorrência de eventos por unidade de tempo ou espaço
    - **Descrição:**
-     - A PMF fornece a probabilidade de ocorrer exatamente $ k $ eventos raros em um intervalo específico.
+     - A PMF fornece a probabilidade de ocorrer exatamente $k$ eventos raros em um intervalo específico.
 
 2. **Função de Distribuição Cumulativa (CDF):**
 
-   $ P(X \leq k) = \displaystyle\sum_{i=0}^{k} \frac{e^{-\lambda} \cdot \lambda^i}{i!} $
+   $P(X \leq k) = \displaystyle\sum_{i=0}^{k} \frac{e^{-\lambda} \cdot \lambda^i}{i!}$
    - **Variáveis:**
-     - $ X $: Número de eventos raros
-     - $ k $: Número de eventos desejados
-     - $ \lambda $: Taxa média de ocorrência de eventos por unidade de tempo ou espaço
+     - $X$: Número de eventos raros
+     - $k$: Número de eventos desejados
+     - $\lambda$: Taxa média de ocorrência de eventos por unidade de tempo ou espaço
    - **Descrição:**
-     - A CDF fornece a probabilidade de ocorrer no máximo $ k $ eventos raros em um intervalo específico.
+     - A CDF fornece a probabilidade de ocorrer no máximo $k$ eventos raros em um intervalo específico.
 
 ### Testes de Hipótese:
 
 1. **Teste de Ajuste para a Distribuição de Poisson:**
 
-   $ X^2 = \displaystyle\sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i} $
+   $X^2 = \displaystyle\sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}$
+   
    - **Variáveis:**
-     - $ O_i $: Frequência observada de eventos em uma categoria específica
-     - $ E_i $: Frequência esperada de eventos em uma categoria específica (calculada usando a distribuição de Poisson)
+     - $O_i$: Frequência observada de eventos em uma categoria específica
+     - $E_i$: Frequência esperada de eventos em uma categoria específica (calculada usando a distribuição de Poisson)
    - **Descrição:**
      - Usado para testar se a distribuição observada de eventos raros se ajusta à distribuição de Poisson esperada.
 
@@ -91,26 +92,24 @@ E sejam as variáveis aleatórias:
 - T: Indivíduo tem duas gripes no ano quando o medicamento é benéfico para ele.
 - N: Indivíduo tem duas gripes no ano quando o medicamento não é benéfico para ele.
 
-$ T \sim \text{P}(3) $
+$T \sim \text{P}(3)$
 
-$ N \sim \text{P}(5) $
+$N \sim \text{P}(5)$
 
-Queremos saber $ P(M|G2): $ Probabilidade condicional do medicamento ser benéfico para um indivíduo que tomou o medicamento durante um ano, dado que ele teve duas gripes no ano?
+Queremos saber $P(M|G2):$ Probabilidade condicional do medicamento ser benéfico para um indivíduo que tomou o medicamento durante um ano, dado que ele teve duas gripes no ano?
 
 
-### Solução:
-
-Vamos calcular a probabilidade condicional $ P(M|G2) $, que representa a probabilidade de o medicamento ser benéfico dado que o indivíduo teve duas gripes no ano.
+Vamos calcular a probabilidade condicional $P(M|G2)$, que representa a probabilidade de o medicamento ser benéfico dado que o indivíduo teve duas gripes no ano.
 
 Usaremos o Teorema de Bayes para isso:
 
-$ P(M|G2) = \frac{P(G2|M) \cdot P(M)}{P(G2)} $
+$\huge P(M|G2) = \frac{P(G2|M) \cdot P(M)}{P(G2)}$
 
 Podemos calcular cada uma das probabilidades no numerador e denominador usando as informações dadas:
 
-1. $ P(G2|M) $ = $ T \sim \text{P}(3) $: A probabilidade de ter duas gripes dado que o medicamento é benéfico. Podemos usar a distribuição de Poisson com $ \lambda = 3 $ para isso.
+1. $P(G2|M)$ = $T \sim \text{P}(3)$: A probabilidade de ter duas gripes dado que o medicamento é benéfico. Podemos usar a distribuição de Poisson com $\lambda = 3$ para isso.
 
-$ P(G2|M) = \displaystyle\frac{e^{-3} \cdot 3^2}{2!} = 0.2240 $
+$P(G2|M) = \displaystyle\frac{e^{-3} \cdot 3^2}{2!} = 0.2240$
 
 
 ![Alt text](/assets/11-1.png)
@@ -118,12 +117,12 @@ $ P(G2|M) = \displaystyle\frac{e^{-3} \cdot 3^2}{2!} = 0.2240 $
 
 
 
-2. $ P(M) $: A probabilidade de o medicamento ser benéfico. Isso corresponde a 75% da população, então $ P(M) = 0.75 $.
+2. $P(M)$: A probabilidade de o medicamento ser benéfico. Isso corresponde a 75% da população, então $ P(M) = 0.75$.
 
 
-3. $ P(G2|M_c) $ = $ N \sim \text{P}(5) $ é a probabilidade de ter duas gripes dado que o medicamento não é benéfico. Podemos usar a distribuição de Poisson com $ \lambda = 5 $ para isso.
+3. $P(G2|M_c)$ = $N \sim \text{P}(5)$ é a probabilidade de ter duas gripes dado que o medicamento não é benéfico. Podemos usar a distribuição de Poisson com $\lambda = 5$ para isso.
 
-$ P(G2|M_c) = \displaystyle\frac{e^{-5} \cdot 5^2}{2!} = 0.0842 $
+$P(G2|M_c) = \displaystyle\frac{e^{-5} \cdot 5^2}{2!} = 0.0842$
 
 
 ![Alt text](/assets/11-2.png)
@@ -132,74 +131,74 @@ $ P(G2|M_c) = \displaystyle\frac{e^{-5} \cdot 5^2}{2!} = 0.0842 $
 
 
 
-4. $ P(M_c) $ é a probabilidade de o medicamento não ser benéfico, ou seja, 25% da população, então $ P(M_c) = 0.25 $.
+4. $P(M_c)$ é a probabilidade de o medicamento não ser benéfico, ou seja, 25% da população, então $P(M_c) = 0.25$.
 
 
-5. $ P(G2) $: A probabilidade marginal de ter duas gripes. Podemos usar a lei da probabilidade total:
+5. $P(G2)$: A probabilidade marginal de ter duas gripes. Podemos usar a lei da probabilidade total:
 
-$ P(G2) = P(G2|M) \cdot P(M) + P(G2|M_c) \cdot P(M_c) $
+$P(G2) = P(G2|M) \cdot P(M) + P(G2|M_c) \cdot P(M_c)$
 
 
 ### Resolvendo a expressão:
 
 
-$ P(G2) = \frac{e^{-3} \cdot 3^2}{2!} \cdot 0.75 + \frac{e^{-5} \cdot 5^2}{2!} \cdot 0.25 $
+$\huge P(G2) = \frac{e^{-3} \cdot 3^2}{2!} \cdot 0.75 + \frac{e^{-5} \cdot 5^2}{2!} \cdot 0.25$
 
 #### Primeiro, vamos calcular cada parte separadamente.
 
 Para a primeira parte:
 
-$ \frac{e^{-3} \cdot 3^2}{2!} \cdot 0.75 $
+$\huge \frac{e^{-3} \cdot 3^2}{2!} \cdot 0.75$
 
-Calculando $e^{-3}$ ou $ \displaystyle \frac{1}{e^{3}} $
+Calculando $e^{-3}$ ou $\displaystyle \frac{1}{e^{3}}$
 
-$ e^{-3} \approx 0.04979 $
+$e^{-3} \approx 0.04979$
 
 Agora, substituímos isso de volta na expressão:
 
-$ \frac{0.04979 \cdot 3^2}{2!} \cdot 0.75 $
+$\huge \frac{0.04979 \cdot 3^2}{2!} \cdot 0.75$
 
 
-$ 0.16766 $
+$0.16766$
 
 #### Agora, para a segunda parte:
 
-$ \frac{e^{-5} \cdot 5^2}{2!} \cdot 0.25 $
+$\huge\frac{e^{-5} \cdot 5^2}{2!} \cdot 0.25$
 
-Calculando $e^{-5}$ ou $ \displaystyle \frac{1}{e^{5}} $
+Calculando $e^{-5}$ ou $ \displaystyle \frac{1}{e^{5}}$
 
-$ e^{-5} \approx 0.00674 $
+$e^{-5} \approx 0.00674$
 
 Substituindo de volta na expressão:
 
-$ \frac{0.00674 \cdot 5^2}{2!} \cdot 0.25 $
+$\huge\frac{0.00674 \cdot 5^2}{2!} \cdot 0.25$
 
 
-$ 0.02106 $
+$0.02106$
 
 #### Agora, somamos as duas partes:
 
-$ 0.16766 + 0.02106 = 0.18872 $
+$0.16766 + 0.02106 = 0.18872$
 
-$ P(G2) = \frac{e^{-3} \cdot 3^2}{2!} \cdot 0.75 + \frac{e^{-5} \cdot 5^2}{2!} \cdot 0.25 = 0.18872$
+$P(G2) = \huge \frac{e^{-3} \cdot 3^2}{2!} \cdot 0.75 + \frac{e^{-5} \cdot 5^2}{2!} \cdot 0.25 = 0.18872$
 
 
 
 #### Usaremos o Teorema de Bayes para isso:
 
-$ P(M|G2) = \displaystyle \frac{P(G2|M) \cdot P(M)}{P(G2)} $
+$P(M|G2) = \displaystyle \frac{P(G2|M) \cdot P(M)}{P(G2)}$
 
-$ P(G2|M) = \displaystyle\frac{e^{-3} \cdot 3^2}{2!} $
+$P(G2|M) = \displaystyle\frac{e^{-3} \cdot 3^2}{2!}$
 
-$ P(M) = 0.75 $
+$P(M) = 0.75$
 
-$ P(G2) = 0.18872$
+$P(G2) = 0.18872$
 
-$ P(M|G2) = 0.8886 $
+$P(M|G2) = 0.8886$
 
 #### Conclusão:
 
-A probabilidade condicional $ P(M|G2) $ foi calculada como 0.8886, isso significa que, dado o fato de que o indivíduo teve duas gripes, a probabilidade de o medicamento ser benéfico para ele é bastante alta.
+A probabilidade condicional $P(M|G2)$ foi calculada como 0.8886, isso significa que, dado o fato de que o indivíduo teve duas gripes, a probabilidade de o medicamento ser benéfico para ele é bastante alta.
 
 Na prática, uma probabilidade próxima de 1 sugere forte evidência de que o medicamento é benéfico para o indivíduo que teve duas gripes. Com base nesse resultado, o indivíduo pode considerar continuar tomando o medicamento, pois a probabilidade de benefício é alta.
 
@@ -247,21 +246,21 @@ Suponha que $X_t$, o número de partículas emitidas em $t$ horas por uma fonte 
 
 A distribuição de Poisson é frequentemente usada para modelar a probabilidade de um número de eventos ocorrer em um intervalo fixo de tempo ou espaço. A função de probabilidade de Poisson é dada por:
 
-$ P(X = k) = \displaystyle\frac{e^{-\lambda} \cdot \lambda^k}{k!} $
+$P(X = k) = \displaystyle\frac{e^{-\lambda} \cdot \lambda^k}{k!}$
 
-onde $ X $ é a variável aleatória representando o número de eventos, $ k $ é o número específico de eventos que estamos interessados, e $ \lambda $ é o parâmetro da distribuição.
+onde $X$ é a variável aleatória representando o número de eventos, $k$ é o número específico de eventos que estamos interessados, e $\lambda$ é o parâmetro da distribuição.
 
-No seu caso, a variável aleatória $ X_t $, o número de partículas emitidas em $ t $ horas, segue uma distribuição de Poisson com parâmetro $ \lambda = 20t $. Como você está interessado no número de partículas emitidas durante um período de 15 minutos ($ t = \frac{1}{4} $ horas), o parâmetro é $ \lambda = 20 \times \frac{1}{4} = 5 $.
+No seu caso, a variável aleatória $X_t$, o número de partículas emitidas em $t$ horas, segue uma distribuição de Poisson com parâmetro $\lambda = 20t$. Como você está interessado no número de partículas emitidas durante um período de 15 minutos ($t = \frac{1}{4}$ horas), o parâmetro é $\lambda = 20 \times \frac{1}{4} = 5$.
 
 Agora, a probabilidade de exatamente 5 partículas serem emitidas durante esse período de 15 minutos é dada pela fórmula de Poisson:
 
-$ P(X_{1/4} = 5) = \displaystyle\frac{e^{-5} \cdot 5^5}{5!} $
+$P(X_{1/4} = 5) = \displaystyle\frac{e^{-5} \cdot 5^5}{5!}$
 
 Vamos calcular isso:
 
-$ P(X_{1/4} = 5) = \displaystyle\frac{e^{-5} \cdot 3125}{120} $
+$P(X_{1/4} = 5) = \displaystyle\frac{e^{-5} \cdot 3125}{120}$
 
-$ P(X_{1/4} = 5) \approx 0.175467 $
+$P(X_{1/4} = 5) \approx 0.175467$
 
 Portanto, a probabilidade de exatamente 5 partículas serem emitidas durante um período de 15 minutos é aproximadamente 0.175467, ou 17.55%.
 
@@ -314,21 +313,21 @@ A indústria deveria aumentar o número de atendentes para receber mais de 50 pe
 
 Neste caso, a situação pode ser modelada usando a distribuição de Poisson, onde a variável aleatória é o número de pedidos por hora, e o parâmetro $ \lambda $ (lambda) é a taxa média de pedidos por hora.
 
-Dado que a taxa média é de 5 pedidos por hora, temos $ \lambda = 5 $.
+Dado que a taxa média é de 5 pedidos por hora, temos $\lambda = 5$.
 
 A probabilidade de receber exatamente $ k $ pedidos em uma hora é dada pela fórmula da distribuição de Poisson:
 
-$ P(X = k) = \displaystyle \frac{e^{-\lambda} \cdot \lambda^k}{k!} $
+$P(X = k) = \displaystyle \frac{e^{-\lambda} \cdot \lambda^k}{k!}$
 
-Agora, a probabilidade de receber mais de dois pedidos por hora $ P(X > 2) $ pode ser calculada somando as probabilidades para $ k = 3, 4, 5, \ldots $. 
+Agora, a probabilidade de receber mais de dois pedidos por hora $P(X > 2)$ pode ser calculada somando as probabilidades para $k = 3, 4, 5, \ldots$. 
 
-$ P(X > 2) = P(X = 3) + P(X = 4) + P(X = 5) ... $
+$P(X > 2) = P(X = 3) + P(X = 4) + P(X = 5) ...$
 
-$ P(X <= 2) = P(X = 0) + P(X = 1) + P(X = 2) = 0.1247 $
+$P(X <= 2) = P(X = 0) + P(X = 1) + P(X = 2) = 0.1247$
 
 ![Alt text](/assets/11-4.png)
 
-$ P(X > 2) = 1- P(X < = 2) = 1 - 0.1247 = 0.8753$
+$P(X > 2) = 1- P(X < = 2) = 1 - 0.1247 = 0.8753$
 
 
 &nbsp;
@@ -343,9 +342,9 @@ Dada a Situação:
 - Número desejado de pedidos ($k$): 50
 
 Calcular a Taxa Média Diária ($\lambda_{\text{dia}}$):
-$\lambda_{\text{dia}} = \lambda \times \text{número de horas} $
+$\huge \lambda_{\text{dia}} = \lambda \times \text{número de horas}$
 
-$\lambda_{\text{dia}} = 5 \times 8 = 40 $
+$\huge \lambda_{\text{dia}} = 5 \times 8 = 40$
 
 Agora, temos a taxa média diária ($\lambda_{\text{dia}}$).
 
@@ -353,13 +352,13 @@ Usar a Distribuição de Poisson para Calcular a Probabilidade
 
 $P(X = 50)$:
 
-$P(X = k) = \displaystyle\frac{e^{\displaystyle -\lambda_{\text{dia}}} \cdot \lambda_{\text{dia}}^k}{k!} $
+$P(X = k) = \huge\frac{e^{\displaystyle -\lambda_{\text{dia}}} \cdot \lambda_{\text{dia}}^k}{k!}$
 
-$P(X = 50) = \displaystyle\frac{e^{-40} \cdot 40^{50}}{50!} $
+$P(X = 50) = \huge\frac{e^{-40} \cdot 40^{50}}{50!}$
 
 Podemos calcular isso numericamente usando Python ou outras ferramentas, mas aqui vou fornecer o resultado:
 
-$P(X = 50) \approx 0.0177 $
+$P(X = 50) \approx 0.0177$
 
 Interpretar o Resultado:
 A probabilidade de haver exatamente 50 pedidos em um dia de trabalho é muito baixa, indicando que é uma ocorrência extremamente rara. Portanto, com base nesta probabilidade, a indústria provavelmente não precisaria aumentar o número de atendentes para lidar com essa situação específica.
