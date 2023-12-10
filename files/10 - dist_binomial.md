@@ -43,80 +43,85 @@ A distribuição binomial é um modelo de probabilidade discreta que descreve o 
 
 1. **Função de Probabilidade (PMF):**
 
-   $ P(X = k) = \displaystyle\binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k} $
+   $P(X = k) = \displaystyle\binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}$
+   
    - **Variáveis:**
-     - $ X $: Número de sucessos
-     - $ n $: Número total de tentativas
-     - $ k $: Número específico de sucessos desejados
-     - $ p $: Probabilidade de sucesso em uma única tentativa
+     
+     - $X$: Número de sucessos
+     - $n$: Número total de tentativas
+     - $k$: Número específico de sucessos desejados
+     - $p$: Probabilidade de sucesso em uma única tentativa
+     - 
    - **Descrição:**
-     - A PMF fornece a probabilidade de obter exatamente $ k $ sucessos em $ n $ tentativas.
+     - A PMF fornece a probabilidade de obter exatamente $k$ sucessos em $n$ tentativas.
 
 
 
-2. **Função de Distribuição Cumulativa (CDF):**
+3. **Função de Distribuição Cumulativa (CDF):**
 
-   $ P(X \leq k) = \displaystyle\sum_{i=0}^{k} \displaystyle\binom{n}{i} \cdot p^i \cdot (1 - p)^{n - i} $
+   $P(X \leq k) = \displaystyle\sum_{i=0}^{k} \displaystyle\binom{n}{i} \cdot p^i \cdot (1 - p)^{n - i}$
+   
    - **Variáveis:**
-     - $ X $: Número de sucessos
-     - $ n $: Número total de tentativas
-     - $ k $: Número de sucessos desejados
-     - $ p $: Probabilidade de sucesso em uma única tentativa
+     - $X$: Número de sucessos
+     - $n$: Número total de tentativas
+     - $k$: Número de sucessos desejados
+     - $p$: Probabilidade de sucesso em uma única tentativa
    - **Descrição:**
-     - A CDF fornece a probabilidade de obter no máximo $ k $ sucessos em $ n $ tentativas.
+     - A CDF fornece a probabilidade de obter no máximo $k$ sucessos em $n$ tentativas.
 
 
 
-3. **Coeficiente binomial $\displaystyle\binom{n}{k}$**
+5. **Coeficiente binomial $\displaystyle\binom{n}{k}$**
 
-Coeficiente binomial e é lido como "n escolha k". Representa o número de maneiras diferentes de escolher $ k $ elementos de um conjunto de $ n $ elementos. A fórmula é dada por:
+Coeficiente binomial e é lido como "n escolha k". Representa o número de maneiras diferentes de escolher $k$ elementos de um conjunto de $n$ elementos. A fórmula é dada por:
 
-   $\displaystyle\binom{n}{k} = \displaystyle\frac{n!}{k!(n-k)!} $
+   $\displaystyle\binom{n}{k} = \displaystyle\frac{n!}{k!(n-k)!}$
 
-   onde $ n! $ (lê-se "n fatorial") é o produto de todos os números inteiros de 1 a $ n $. Isso leva em consideração as diferentes maneiras de escolher $ k $ sucessos em $ n $ tentativas, sem levar em conta a ordem em que ocorrem.
+   onde $n!$ (lê-se "n fatorial") é o produto de todos os números inteiros de 1 a $n$. Isso leva em consideração as diferentes maneiras de escolher $k$ sucessos em $n$ tentativas, sem levar em conta a ordem em que ocorrem.
 
 
 
 
 ### Média da Distribuição Binomial:
 
-A média ($ \mu $) de uma distribuição binomial é o número esperado de sucessos em $ n $ ensaios independentes. Matematicamente, é dado por:
+A média ($\mu$) de uma distribuição binomial é o número esperado de sucessos em $n$ ensaios independentes. Matematicamente, é dado por:
 
-$ \mu = n \cdot p $
+$\mu = n \cdot p$
 
 onde:
-- $ n $ é o número de ensaios (número de tentativas),
-- $ p $ é a probabilidade de sucesso em cada ensaio.
+- $n$ é o número de ensaios (número de tentativas),
+- $p$ é a probabilidade de sucesso em cada ensaio.
 
 A média fornece uma medida de centralidade na distribuição binomial, indicando o valor médio que se espera observar ao realizar o experimento várias vezes.
 
 ### Variância e Desvio Padrão da Distribuição Binomial:
 
-A variância ($ \sigma^2 $) e o desvio padrão ($ \sigma $) são medidas de dispersão que indicam quão longe os valores da distribuição estão da média.
+A variância ($\sigma^2$) e o desvio padrão ($\sigma$) são medidas de dispersão que indicam quão longe os valores da distribuição estão da média.
 
-$ \sigma^2 = n \cdot p \cdot (1 - p) $
+$\sigma^2 = n \cdot p \cdot (1 - p)$
 
-$ \sigma = \sqrt{n \cdot p \cdot (1 - p)} $
+$\sigma = \sqrt{n \cdot p \cdot (1 - p)}$
 
 onde:
-- $ n $ é o número de ensaios,
-- $ p $ é a probabilidade de sucesso.
+- $n$ é o número de ensaios,
+- $p$ é a probabilidade de sucesso.
 
-A variância é o quadrado do desvio padrão. Ambos os valores aumentam à medida que a probabilidade de sucesso ($ p $) se afasta de 0,5. Quando $ p = 0,5 $, a distribuição é mais dispersa, e quando $ p $ se afasta de 0,5, a distribuição fica mais concentrada em torno da média.
+A variância é o quadrado do desvio padrão. Ambos os valores aumentam à medida que a probabilidade de sucesso ($p$) se afasta de 0,5. Quando $p = 0,5$, a distribuição é mais dispersa, e quando $ p $ se afasta de 0,5, a distribuição fica mais concentrada em torno da média.
 
 Essas medidas são cruciais para entender a forma e a dispersão da distribuição binomial, sendo particularmente úteis em prever resultados e avaliar a consistência dos dados em experimentos onde o número de ensaios é fixo e os ensaios são independentes.
 
 
 ### Testes de Hipótese:
 
-1. **Teste de Hipótese para uma Proporção ($ p $):**
+1. **Teste de Hipótese para uma Proporção ($p$):**
 
-   $ Z = \displaystyle\frac{\hat{p} - p_0}{\displaystyle\sqrt{\frac{p_0 \cdot (1 - p_0)}{n}}} $
+   $Z = \displaystyle\frac{\hat{p} - p_0}{\displaystyle\sqrt{\frac{p_0 \cdot (1 - p_0)}{n}}}$
    
    - **Variáveis:**
-     - $ \hat{p} $: Proporção amostral de sucessos
-     - $ p_0 $: Valor sob a hipótese nula
-     - $ n $: Número total de tentativas
+     - $\hat{p}$: Proporção amostral de sucessos
+     - $p_0$: Valor sob a hipótese nula
+     - $n$: Número total de tentativas
+     - 
    - **Descrição:**
      - Usado para testar hipóteses sobre a proporção de sucessos em um experimento binomial.
 
@@ -141,19 +146,19 @@ Para resolver essas questões, podemos usar a distribuição de probabilidade bi
 
 A fórmula para a distribuição binomial é dada por:
 
-$ P(X = k) = \displaystyle\binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k} $
+$P(X = k) = \displaystyle\binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}$
 
 onde:
-- $ n $ é o número total de ensaios (número de peças na caixa),
-- $ k $ é o número de eventos desejados (número de peças defeituosas),
-- $ p $ é a probabilidade de um evento (probabilidade de uma peça ser defeituosa),
-- $ (1 - p) $ é a probabilidade do evento oposto (probabilidade de uma peça não ser defeituosa).
+- $n$ é o número total de ensaios (número de peças na caixa),
+- $k$ é o número de eventos desejados (número de peças defeituosas),
+- $p$ é a probabilidade de um evento (probabilidade de uma peça ser defeituosa),
+- $(1 - p)$ é a probabilidade do evento oposto (probabilidade de uma peça não ser defeituosa).
 
 Vamos calcular cada parte:
 
 a) Probabilidade de exatamente 3 peças defeituosas em uma caixa:
 
-$ P(X = 3) = \binom{5}{3} \cdot (0.10)^3 \cdot (0.90)^2 $
+$P(X = 3) = \binom{5}{3} \cdot (0.10)^3 \cdot (0.90)^2$
 
 ```
 Probabilidade de exatamente 3 peças defeituosas: 0.0081
@@ -165,11 +170,11 @@ Probabilidade de exatamente 3 peças defeituosas: 0.0081
 
 b) Probabilidade de duas ou mais peças defeituosas em uma caixa:
 
-$ P(X < 2) = P(X = 0) + P(X = 1)$
+$P(X < 2) = P(X = 0) + P(X = 1)$
 
-$ P(X \geq 2) = P(X = 2) + P(X = 3) + P(X = 4) + P(X = 5) $
+$P(X \geq 2) = P(X = 2) + P(X = 3) + P(X = 4) + P(X = 5)$
 
-$ 1 - P(X < 2) = 1- 0.9185 = 0,0815 $
+$1 - P(X < 2) = 1- 0.9185 = 0,0815$
 
 ```
 Probabilidade de duas ou mais peças defeituosas: 0.0815
@@ -182,9 +187,9 @@ Probabilidade de duas ou mais peças defeituosas: 0.0815
 
 c) Valor esperado da multa em 1000 caixas:
 
-$ \text{Valor Esperado} = \text{Probabilidade de peça defeituosa em uma caixa} \times \text{Multa por caixa} \times \text{Número total de caixas} $
+$\text{Valor Esperado} = \text{Probabilidade de peça defeituosa em uma caixa} \times \text{Multa por caixa} \times \text{Número total de caixas}$
 
-$ \text{Valor Esperado} =$ 0,3281 x R$10,00 x 1000 = R$3.281,00
+$\text{Valor Esperado} =$ 0,3281 x R$10,00 x 1000 = R$3.281,00
 
 ```
 Valor esperado da multa em 1000 caixas: R$3280.50
@@ -234,25 +239,25 @@ Se a probabilidade de um certo gado sofrer uma dada reação nociva, resultante 
 
 A probabilidade de exatamente 3 animais sofrerem a reação pode ser calculada utilizando a fórmula da distribuição binomial:
 
-$ P(X = 3) = \binom{2000}{3} \cdot (0,001)^3 \cdot (1 - 0,001)^{2000 - 3} $
+$P(X = 3) = \binom{2000}{3} \cdot (0,001)^3 \cdot (1 - 0,001)^{2000 - 3}$
 
 Substituindo os valores:
 
-$ P(X = 3) = \binom{2000}{3} \cdot (0,001)^3 \cdot (0,999)^{1997} $
+$P(X = 3) = \binom{2000}{3} \cdot (0,001)^3 \cdot (0,999)^{1997}$
 
 **Resultado:**
 
-$ P(X = 3) \approx 0.180537 $
+$P(X = 3) \approx 0.180537$
 
 **b) Mais do que 2 sofrerem aquela reação;**
 
-A probabilidade de mais do que 2 animais sofrerem a reação pode ser calculada somando as probabilidades para $ k = 3, 4, \ldots, 2000 $:
+A probabilidade de mais do que 2 animais sofrerem a reação pode ser calculada somando as probabilidades para $k = 3, 4, \ldots, 2000$:
 
-$ P(X > 2) = P(X = 3) + P(X = 4) + \ldots + P(X = 2000) $
+$P(X > 2) = P(X = 3) + P(X = 4) + \ldots + P(X = 2000)$
 
 **Resultado:**
 
-$ P(X > 2) \approx 0.323324 $
+$P(X > 2) \approx 0.323324$
 
 ```
 from math import comb
@@ -302,17 +307,17 @@ Justificativa: A variável X representa o número de sucessos em uma sequência 
 
 **b) Probabilidade de Todos Serem Curados**
 
-A probabilidade de todos serem curados (X = 4) é dada por $ P(X = 4) = 0.06250003 $.
+A probabilidade de todos serem curados (X = 4) é dada por $P(X = 4) = 0.06250003$.
 
 **c) Probabilidade de ao Menos Dois Não Serem Curados**
 
 A probabilidade de ao menos dois não serem curados (X ≥ 2) é dada por:
 
- $ P(X \geq 2) = P(X = 2) + P(X = 3) + P(X = 4) $.
+$P(X \geq 2) = P(X = 2) + P(X = 3) + P(X = 4)$.
 
-$ P(X < 2) = P(X = 0) + P(X = 1) $
+$P(X < 2) = P(X = 0) + P(X = 1)$
 
-$ P(X \geq 2) = 1 - P(X < 2) = $ 1 - 0.3125 = 0.6875
+$P(X \geq 2) = 1 - P(X < 2) =$ 1 - 0.3125 = 0.6875
 
 ![Alt text](/assets/10-5.png)
 
@@ -322,11 +327,11 @@ $ P(X \geq 2) = 1 - P(X < 2) = $ 1 - 0.3125 = 0.6875
 
 O número esperado de animais curados:
 
-  $ \mu = n \cdot p = 4 \cdot 0.5 = 2 $ animais. 
+$\mu = n \cdot p = 4 \cdot 0.5 = 2$ animais. 
  
- O desvio padrão ($ \sigma $) é calculado como:
+O desvio padrão ($\sigma$) é calculado como:
  
-  $ \sigma = \sqrt{n \cdot p \cdot (1 - p)}  =  \sqrt{4 \cdot 0.5 \cdot (1 - 0.5)} =  1.00 $.
+$\sigma = \sqrt{n \cdot p \cdot (1 - p)}  =  \sqrt{4 \cdot 0.5 \cdot (1 - 0.5)} =  1.00$.
 
 
 
@@ -436,7 +441,7 @@ Falha em rejeitar a hipótese nula. p-value: 0.2890625
 
 ### Conclusão 1:
 
-- $ \text{Valor-p} > \alpha $
+- $\text{Valor-p} > \alpha$
 
 Se o valor-p (p-value) associado ao teste de hipótese for 0.2890625, isso significa que a probabilidade de observar 2 sucessos em 8 cirurgias, assumindo uma taxa de sucesso de $p_0 = 0.5$, é relativamente alta.
 
@@ -451,8 +456,8 @@ Portanto, com um valor-p de 0.2890625, não rejeitamos a hipótese nula a um ní
 
 ### Conclusão 2:
 
-Caso o valor-p fosse menor que $\alpha $
-- $ Valor-p < \alpha $
+Caso o valor-p fosse menor que $\alpha$
+- $Valor-p < \alpha$
 - $p_0= 0.75$ (é a taxa de sucesso sob a hipótese nula) 
 - Hipótese Nula ($H_0$): A taxa de sucesso (probabilidade de cura) é igual a $p_0$.
 - Valor-p: 0.00423 (aproximadamente)
@@ -464,7 +469,7 @@ Rejeitar a hipótese nula. p-value: 0.0042266845703125
 
 
 
-Nesse caso, como o valor-p é menor que o nível de significância ($ \alpha = 0.05 $), podemos rejeitar a hipótese nula ($ H_0 $) em favor da hipótese alternativa ($ H_1 $). Isso indica que a taxa de sucesso observada é significativamente diferente de 0.75.
+Nesse caso, como o valor-p é menor que o nível de significância ($\alpha = 0.05$), podemos rejeitar a hipótese nula ($H_0$) em favor da hipótese alternativa ($H_1$). Isso indica que a taxa de sucesso observada é significativamente diferente de 0.75.
 
 Portanto, podemos concluir que, com base nos dados observados, há evidências estatísticas para suportar a ideia de que a taxa de sucesso é diferente de 0.75. O valor-p indica quão improvável seria observar os dados que você tem, sob a suposição de que a taxa de sucesso é realmente 0.75.
 
