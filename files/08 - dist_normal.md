@@ -43,42 +43,50 @@ A distribuição normal, também conhecida como a distribuição de Gauss ou dis
 ### Fórmulas Principais:
 
 1. **Função de Densidade de Probabilidade (PDF):**
-   $ f(x) = \displaystyle\frac{1}{\sqrt{2\pi\sigma^2}} \cdot e^{\displaystyle-\frac{(x - \mu)^2}{2\sigma^2}} $
+ 
+   $\huge f(x) = \displaystyle\frac{1}{\sqrt{2\pi\sigma^2}} \cdot e^{\displaystyle-\frac{(x - \mu)^2}{2\sigma^2}}$
+   
    - **Variáveis:**
-     - $ x $: Variável aleatória
-     - $ \mu $: Média da distribuição
-     - $ \sigma $: Desvio padrão da distribuição
+     - $x$: Variável aleatória
+     - $\mu$: Média da distribuição
+     - $\sigma$: Desvio padrão da distribuição
    - **Descrição:**
-     - A PDF descreve a densidade de probabilidade em torno de um determinado valor $ x $.
+     - A PDF descreve a densidade de probabilidade em torno de um determinado valor $x$.
 
-2. **Função de Distribuição Cumulativa (CDF):**
-   $ F(x) = P(X \leq x) = \int_{-\infty}^{x} f(t) \, dt $
+4. **Função de Distribuição Cumulativa (CDF):**
+
+   $\huge F(x) = P(X \leq x) = \int_{-\infty}^{x} f(t) \, dt$
+   
    - **Variáveis:**
-     - $ x $: Valor para o qual queremos calcular a probabilidade acumulada
+     - $x$: Valor para o qual queremos calcular a probabilidade acumulada
    - **Descrição:**
-     - A CDF fornece a probabilidade de que a variável aleatória seja menor ou igual a $ x $.
+     - A CDF fornece a probabilidade de que a variável aleatória seja menor ou igual a $x$.
 
 ### Testes de Hipótese:
 
-1. **Teste Z para a Média ($ \mu $):**
+1. **Teste Z para a Média ($\mu$):**
 
-   $ Z = \displaystyle\frac{\bar{X} - \mu_0}{\displaystyle\frac{\sigma}{\sqrt{n}}} $
+   $\huge Z = \displaystyle\frac{\bar{X} - \mu_0}{\displaystyle\frac{\sigma}{\sqrt{n}}}$
+   
    - **Variáveis:**
-     - $ \bar{X} $: Média da amostra
-     - $ \mu_0 $: Valor sob a hipótese nula
-     - $ \sigma $: Desvio padrão populacional conhecido
-     - $ n $: Tamanho da amostra
+     - $\bar{X}$: Média da amostra
+     - $\mu_0$: Valor sob a hipótese nula
+     - $\sigma$: Desvio padrão populacional conhecido
+     - $n$: Tamanho da amostra
+     - 
    - **Descrição:**
      - Usado quando o desvio padrão populacional é conhecido.
 
-2. **Intervalo de Confiança para a Média ($ \mu $):**
+3. **Intervalo de Confiança para a Média ($\mu$):**
 
-   $ \bar{X} \pm Z \left(\displaystyle \frac{\sigma}{\sqrt{n}} \right) $
+   $\huge \bar{X} \pm Z \left(\displaystyle \frac{\sigma}{\sqrt{n}} \right)$
+   
    - **Variáveis:**
-     - $ \bar{X} $: Média da amostra
-     - $ Z $: Valor crítico da distribuição normal padrão (Z-score)
-     - $ \sigma $: Desvio padrão populacional conhecido
-     - $ n $: Tamanho da amostra
+     - $\bar{X}$: Média da amostra
+     - $Z$: Valor crítico da distribuição normal padrão (Z-score)
+     - $\sigma$: Desvio padrão populacional conhecido
+     - $n$: Tamanho da amostra
+     - 
    - **Descrição:**
      - Usado para estimar um intervalo de confiança para a média populacional quando o desvio padrão populacional é conhecido.
 
