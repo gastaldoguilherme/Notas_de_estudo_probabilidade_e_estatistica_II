@@ -43,25 +43,28 @@ A distribuição t de Student é especialmente útil em situações em que a amo
 
 ### Fórmulas Principais:
 
-1. **Intervalo de Confiança para a Média ($ \mu $) com Amostra Pequena:**
+1. **Intervalo de Confiança para a Média ($\mu$) com Amostra Pequena:**
 
-   $ \bar{X} \pm t \left( \frac{s}{\sqrt{n}} \right) $
+   $\bar{X} \pm t \left( \frac{s}{\sqrt{n}} \right)$
+   
    - **Variáveis:**
-     - $ \bar{X} $: Média da amostra
-     - $ t $: Valor crítico da distribuição t de Student com $ n-1 $ graus de liberdade
-     - $ s $: Desvio padrão da amostra
-     - $ n $: Tamanho da amostra
+     - $\bar{X}$: Média da amostra
+     - $t$: Valor crítico da distribuição t de Student com $ n-1 $ graus de liberdade
+     - $s$: Desvio padrão da amostra
+     - $n$: Tamanho da amostra
+     - 
    - **Descrição:**
      - Usado para estimar um intervalo de confiança para a média populacional quando o desvio padrão populacional é desconhecido.
 
-2. **Estatística de Teste t para a Média ($ \mu $):**
+3. **Estatística de Teste t para a Média ($ \mu $):**
 
-   $ t =\displaystyle \frac{\bar{X} - \mu_0}{\displaystyle\frac{s}{\sqrt{n}}} $
+   $t =\displaystyle \frac{\bar{X} - \mu_0}{\displaystyle\frac{s}{\sqrt{n}}}$
    - **Variáveis:**
-     - $ \bar{X} $: Média da amostra
-     - $ \mu_0 $: Valor sob a hipótese nula
-     - $ s $: Desvio padrão da amostra
-     - $ n $: Tamanho da amostra
+     - $\bar{X}$: Média da amostra
+     - $\mu_0$: Valor sob a hipótese nula
+     - $s$: Desvio padrão da amostra
+     - $n$: Tamanho da amostra
+     - 
    - **Descrição:**
      - Usado para realizar testes de hipótese sobre a média populacional quando o desvio padrão populacional é desconhecido.
 
@@ -75,21 +78,21 @@ A distribuição t de Student é frequentemente utilizada em inferência estatí
 
 O erro padrão da média (também conhecido como erro padrão da amostra ou desvio padrão padrão) é calculado usando a fórmula:
 
-$ SE = \displaystyle \frac{s}{\sqrt{n}} $
+$SE = \displaystyle \frac{s}{\sqrt{n}}$
 
 onde:
-- $ s $ é o desvio padrão amostral,
-- $ n $ é o tamanho da amostra.
+- $s$ é o desvio padrão amostral,
+- $n$ é o tamanho da amostra.
 
 Esse valor é utilizado para calcular intervalos de confiança para a média ou para realizar testes de hipóteses sobre a média populacional quando a variância populacional é desconhecida.
 
-A distribuição t de Student é utilizada para calcular valores críticos (t crítico) para determinado nível de confiança e graus de liberdade (n-1, onde $ n $ é o tamanho da amostra). Esses valores críticos são utilizados para construir intervalos de confiança e realizar testes de hipóteses.
+A distribuição t de Student é utilizada para calcular valores críticos (t crítico) para determinado nível de confiança e graus de liberdade (n-1, onde $n$ é o tamanho da amostra). Esses valores críticos são utilizados para construir intervalos de confiança e realizar testes de hipóteses.
 
-Por exemplo, para um intervalo de confiança de 95% e uma amostra com $ n $ graus de liberdade, aproximadamente 95% das médias amostrais estarão dentro do intervalo $\bar{X} \pm t_{\alpha/2} \times SE$, onde $ \bar{X} $ é a média amostral, $ t_{\alpha/2} $ é o valor crítico da distribuição t e $ SE $ é o erro padrão da média.
+Por exemplo, para um intervalo de confiança de 95% e uma amostra com $n$ graus de liberdade, aproximadamente 95% das médias amostrais estarão dentro do intervalo $\bar{X} \pm t_{\alpha/2} \times SE$, onde $ \bar{X}$ é a média amostral, $t_{\alpha/2}$ é o valor crítico da distribuição t e $SE$ é o erro padrão da média.
 
 A fórmula geral para um intervalo de confiança é:
 
-$ \bar{X} \pm t_{\alpha/2} \times SE $
+$\bar{X} \pm t_{\alpha/2} \times SE$
 
    
 ---
@@ -100,7 +103,7 @@ $ \bar{X} \pm t_{\alpha/2} \times SE $
 
 O intervalo de confiança para a diferença de médias de duas amostras independentes, quando as populações não têm variâncias iguais e a distribuição amostral segue uma distribuição t de Student, pode ser expresso da seguinte forma:
 
-$ \displaystyle \bar{X}_1 - \bar{X}_2 \pm t \times \sqrt{\left(\frac{s_1^2}{n_1}\right) + \left(\frac{s_2^2}{n_2}\right)} $
+$\displaystyle \bar{X}_1 - \bar{X}_2 \pm t \times \sqrt{\left(\frac{s_1^2}{n_1}\right) + \left(\frac{s_2^2}{n_2}\right)}$
 
 Onde:
 
@@ -109,7 +112,7 @@ Onde:
 - $n_1$ e $n_2$ são os tamanhos das amostras.
 - $t$ é o valor crítico da distribuição t de Student com graus de liberdade $df$ calculados usando a fórmula:
 
-$ df = \displaystyle  \frac{\left(\displaystyle \frac{s_1^2}{n_1} + \displaystyle \frac{s_2^2}{n_2}\right)^2}{\displaystyle \frac{\left(\displaystyle  \frac{\displaystyle \frac{s_1^2}{n_1}}{n_1-1}\right)^2}{n_1-1} + \displaystyle  \frac{\left(\displaystyle  \frac{\displaystyle  \frac{s_2^2}{n_2}}{n_2-1}\right)^2}{n_2-1}} $
+$df = \displaystyle  \frac{\left(\displaystyle \frac{s_1^2}{n_1} + \displaystyle \frac{s_2^2}{n_2}\right)^2}{\displaystyle \frac{\left(\displaystyle  \frac{\displaystyle \frac{s_1^2}{n_1}}{n_1-1}\right)^2}{n_1-1} + \displaystyle  \frac{\left(\displaystyle  \frac{\displaystyle  \frac{s_2^2}{n_2}}{n_2-1}\right)^2}{n_2-1}}$
 
 O intervalo de confiança é construído em torno da estimativa pontual da diferença das médias, $\bar{X}_1 - \bar{X}_2$, com a margem de erro determinada pelo desvio padrão padrão (erro padrão) multiplicado pelo valor crítico t. O valor crítico t é escolhido com base no nível de confiança desejado e nos graus de liberdade associados.
 
@@ -161,14 +164,14 @@ Este valor de $df$ seria utilizado ao realizar um teste de hipóteses para a dif
 
 Se assumirmos variâncias populacionais iguais (homocedasticidade), a fórmula do intervalo de confiança para a diferença de médias de duas amostras independentes é simplificada. Nesse caso, utilizamos a variância combinada ponderada. A fórmula do intervalo de confiança é dada por:
 
-$ \bar{X}_1 - \bar{X}_2 \pm t \times \sqrt{\displaystyle\left(\displaystyle \frac{s_p^2}{n_1}\right) + \left(\displaystyle \frac{s_p^2}{n_2}\right)} $
+$\bar{X}_1 - \bar{X}_2 \pm t \times \sqrt{\displaystyle\left(\displaystyle \frac{s_p^2}{n_1}\right) + \left(\displaystyle \frac{s_p^2}{n_2}\right)}$
 
 onde:
 
 - $\bar{X}_1$ e $\bar{X}_2$ são as médias das duas amostras.
 - $s_p^2$ é a variância combinada ponderada, calculada por:
 
-$ s_p^2 = \displaystyle\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2} $
+$s_p^2 = \displaystyle\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}$
 
 - $n_1$ e $n_2$ são os tamanhos das amostras.
 - $t$ é o valor crítico da distribuição t de Student com graus de liberdade $df = n_1 + n_2 - 2$, com base no nível de confiança desejado.
@@ -382,14 +385,14 @@ Considerando os dois grupos como amostras aleatórias de duas populações indep
 
 Se assumirmos variâncias populacionais iguais (homocedasticidade), a fórmula do intervalo de confiança para a diferença de médias de duas amostras independentes é simplificada. Nesse caso, utilizamos a variância combinada ponderada. A fórmula do intervalo de confiança é dada por:
 
-$ \bar{X}_1 - \bar{X}_2 \pm t \times \sqrt{\displaystyle\left(\displaystyle \frac{s_p^2}{n_1}\right) + \left(\displaystyle \frac{s_p^2}{n_2}\right)} $
+$\bar{X}_1 - \bar{X}_2 \pm t \times \sqrt{\displaystyle\left(\displaystyle \frac{s_p^2}{n_1}\right) + \left(\displaystyle \frac{s_p^2}{n_2}\right)}$
 
 onde:
 
 - $\bar{X}_1$ e $\bar{X}_2$ são as médias das duas amostras.
 - $s_p^2$ é a variância combinada ponderada, calculada por:
 
-$ s_p^2 = \displaystyle\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2} $
+$s_p^2 = \displaystyle\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}$
 
 
 
