@@ -28,11 +28,11 @@ Na tabela Z, você procuraria o valor que corresponde a uma área acumulada de 0
 Portanto, para um intervalo de confiança de 95%, você usaria $Z = 1.96$ para calcular a margem de erro em torno da sua estimativa pontual.
 ```
 
-$\bar{x} \pm Z \left( \frac{\sigma}{\sqrt{n}} \right)$
+$$\huge\bar{x} \pm Z \left( \frac{\sigma}{\sqrt{n}} \right)$$
 
 Substituindo os valores conhecidos:
 
-$50 \pm 1.96 \left( \frac{10}{\sqrt{30}} \right)$
+$$\huge 50 \pm 1.96 \left( \frac{10}{\sqrt{30}} \right)$$
 
 
 Esse é um exemplo básico, e os cálculos específicos podem variar dependendo do tipo de intervalo de confiança (por exemplo, para proporções ou desvios padrão) e da distribuição subjacente dos dados.
@@ -129,7 +129,7 @@ Estes são apenas alguns exemplos e a escolha do intervalo de confiança depende
 
 #### Fórmula Geral:
 
-$\bar{x} \pm Z \left(\displaystyle \frac{s}{\sqrt{n}} \right)$
+$$\huge\bar{x} \pm Z \left(\displaystyle \frac{s}{\sqrt{n}} \right)$$
 
 - $\bar{x}$: média da amostra
 - $Z$: valor crítico da distribuição normal ou t de Student (dependendo do tamanho da amostra e do nível de confiança)
@@ -151,7 +151,7 @@ Suponha que um pesquisador coletou dados sobre os salários de 100 Vendedores. O
 
 **1. Fórmula do Intervalo de Confiança para Média:**
 
-$\text{Intervalo de Confiança} = \bar{x} \pm Z \left(\frac{\sigma}{\sqrt{n}}\right)$
+$$\text{Intervalo de Confiança} = \huge \bar{x} \pm Z \left(\frac{\sigma}{\sqrt{n}}\right)$$
 
 Onde $Z$ é o valor crítico da distribuição normal padrão associado ao nível de confiança escolhido.
 
@@ -211,7 +211,7 @@ Intervalo de Confiança (95%): (5584.403961700594, 6015.596038299406)
 
 #### Fórmula Geral:
 
-$\hat{p} \pm Z \sqrt{\displaystyle \frac{\hat{p}(1-\hat{p})}{n}}$
+$$\huge\hat{p} \pm Z \sqrt{\displaystyle \frac{\hat{p}(1-\hat{p})}{n}}$$
 
 - $\hat{p}$: proporção da amostra
 - $Z$: valor crítico da distribuição normal
@@ -231,18 +231,18 @@ Suponha que uma pesquisa eleitoral tenha sido realizada para uma eleição de ca
 
 **1. Proporção de Apoio ao Candidato A:**
 
-$\text{Proporção} (\hat{p}) =\displaystyle  \frac{\text{Número de votos para o Candidato A}}{\text{Tamanho da amostra total}}$
+$$\huge\text{Proporção} (\hat{p}) =\displaystyle  \frac{\text{Número de votos para o Candidato A}}{\text{Tamanho da amostra total}}$$
 
-$\hat{p} = \displaystyle \frac{650}{1000} = 0,65$
+$$\huge\hat{p} = \displaystyle \frac{650}{1000} = 0,65$$
 
 
 
 
 **2. Erro Padrão da Proporção:**
 
-$SE(\hat{p}) = \sqrt{\displaystyle \frac{\hat{p}(1 - \hat{p})}{n}}$
+$\huge SE(\hat{p}) = \sqrt{\displaystyle \frac{\hat{p}(1 - \hat{p})}{n}}$
 
-$SE(\hat{p}) = \sqrt{\displaystyle \frac{0,65 \times (1 - 0,65)}{1000}}$
+$\huge SE(\hat{p}) = \sqrt{\displaystyle \frac{0,65 \times (1 - 0,65)}{1000}}$
 
 **3. Valor Crítico Z para um Intervalo de Confiança de 95%:**
 
