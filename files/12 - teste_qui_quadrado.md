@@ -10,51 +10,54 @@ O teste do Qui-Quadrado é uma técnica estatística utilizada para avaliar se e
 
 ### Fórmulas Principais:
 
-1. **Estatística do Qui-Quadrado ($ X^2 $):**
+1. **Estatística do Qui-Quadrado ($X^2$):**
 
-   $ X^2 =\displaystyle \sum \frac{(O_i - E_i)^2}{E_i} $
+   $X^2 =\displaystyle \sum \frac{(O_i - E_i)^2}{E_i}$
 
    - **Variáveis:**
-     - $ O_i $: Frequência observada em cada categoria
-     - $ E_i $: Frequência esperada em cada categoria (calculada com base em uma distribuição ou modelo)
+     - $O_i$: Frequência observada em cada categoria
+     - $E_i$: Frequência esperada em cada categoria (calculada com base em uma distribuição ou modelo)
    - **Descrição:**
      - Calcula a diferença entre as frequências observadas e esperadas, ponderada pelo inverso da expectativa.
 
-2. **Graus de Liberdade ($ df $):**
+2. **Graus de Liberdade ($df$):**
 
-   $ df = (\text{Número de categorias} - 1) $
+   $df = (\text{Número de categorias} - 1)$
    - **Variáveis:**
-     - $ \text{Número de categorias} $: Número de categorias ou grupos no conjunto de dados
+     - $\text{Número de categorias}$: Número de categorias ou grupos no conjunto de dados
    - **Descrição:**
      - Indica o número de graus de liberdade associados ao teste.
 
 ### Testes de Hipótese:
 
 1. **Teste de Independência (Qui-Quadrado de Independência):**
+2. 
    - **Hipóteses:**
-     - $ H_0 $: As variáveis são independentes.
-     - $ H_1 $: Há uma associação entre as variáveis.
+     - $H_0$: As variáveis são independentes.
+     - $H_1$: Há uma associação entre as variáveis.
+     - 
    - **Estatística de Teste:**
 
-     $ X^2 = \sum \frac{(O_i - E_i)^2}{E_i} $
+     $X^2 = \sum \frac{(O_i - E_i)^2}{E_i}$
+     
    - **Graus de Liberdade:**
 
-     $ df = (\text{Número de linhas} - 1) \times (\text{Número de colunas} - 1) $
+     $df = (\text{Número de linhas} - 1) \times (\text{Número de colunas} - 1)$
 
-2. **Teste de Adequação (Qui-Quadrado de Adequação):**
+3. **Teste de Adequação (Qui-Quadrado de Adequação):**
 
    - **Hipóteses:**
-     - $ H_0 $: Os dados seguem a distribuição especificada.
-     - $ H_1 $: Os dados não seguem a distribuição especificada.
+     - $H_0$: Os dados seguem a distribuição especificada.
+     - $H_1$: Os dados não seguem a distribuição especificada.
 
    - **Estatística de Teste:**
 
-     $ X^2 = \sum \frac{(O_i - E_i)^2}{E_i} $
+     $X^2 = \sum \frac{(O_i - E_i)^2}{E_i}$
 
 
    - **Graus de Liberdade:**
    
-     $ df = (\text{Número de categorias ou grupos} - \text{Número de parâmetros estimados}) $
+     $df = (\text{Número de categorias ou grupos} - \text{Número de parâmetros estimados})$
 
 ### Quando Usar o Teste do Qui-Quadrado:
 
@@ -102,26 +105,26 @@ print(numeros_ordenados)
 
 - Número de intervalos (Regra de Sturges)
 
-$ k = 1 + 3.31 \log_{10} n $   
+$k = 1 + 3.31 \log_{10} n$   
 
-$ k = 1 + 3.31 \log_{10} 65 \approx 7 $
+$k = 1 + 3.31 \log_{10} 65 \approx 7$
 
 - Amplitude de cada intervalo:
 
-$ h = \displaystyle \frac{A}{k} = \frac{x(n) - x(1)}{k} = \displaystyle \frac{391 - 135}{7} \approx 36.57 $
+$h = \displaystyle \frac{A}{k} = \frac{x(n) - x(1)}{k} = \displaystyle \frac{391 - 135}{7} \approx 36.57$
 
 
 - Construindo a tabela de frequências
 
 | INTERVALO            | AMPLITUDE              |
 |----------------------|------------------------|
-| 1                    | $ \text{min}(x) $ - $ \text{min}(x) + h $   |
-| 2                    | $ \text{min}(x) + h $ - $ \text{min}(x) + 2h $ |
-| 3                    | $ \text{min}(x) + 2h $ - $ \text{min}(x) + 3h $|
-| 4                    | $ \text{min}(x) + 3h $ - $ \text{min}(x) + 4h $|
-| 5                    | $ \text{min}(x) + 4h $ - $ \text{min}(x) + 5h $|
-| 6                    | $ \text{min}(x) + 5h $ - $ \text{min}(x) + 6h $|
-| 7                    | $ \geq \text{min}(x) + 6h $                        |
+| 1                    | $\text{min}(x)$ - $\text{min}(x) + h$   |
+| 2                    | $\text{min}(x) + h$ - $\text{min}(x) + 2h$ |
+| 3                    | $\text{min}(x) + 2h$ - $\text{min}(x) + 3h$|
+| 4                    | $\text{min}(x) + 3h$ - $\text{min}(x) + 4h$|
+| 5                    | $\text{min}(x) + 4h$ - $\text{min}(x) + 5h$|
+| 6                    | $\text{min}(x) + 5h$ - $\text{min}(x) + 6h$|
+| 7                    | $\geq \text{min}(x) + 6h$                    |
 
 
 
@@ -135,7 +138,7 @@ $ h = \displaystyle \frac{A}{k} = \frac{x(n) - x(1)}{k} = \displaystyle \frac{39
 | 4         | 244.71 - 281.28         |
 | 5         | 281.28 - 317.85         |
 | 6         | 317.85 - 354.42         |
-| 7         | $\geq $ 354.42       |
+| 7         | $\geq$ 354.42       |
 
 
 ### Calculo da probabilidade para cada intervalo:
@@ -145,37 +148,37 @@ $ h = \displaystyle \frac{A}{k} = \frac{x(n) - x(1)}{k} = \displaystyle \frac{39
 Vamos calcular os valores numéricos usando $\mu_0 = 250$ e $\sigma_0 = 50$. 
 
 1. **Intervalo 1 (135.00 a 171.57):**
-$ p_1 = P(135 < X < 171.57) = P\left(\frac{135 - 250}{50} < Z < \frac{171.57 - 250}{50}\right) $ 
+$p_1 = P(135 < X < 171.57) = P\left(\frac{135 - 250}{50} < Z < \frac{171.57 - 250}{50}\right)$ 
 
 $p_1 = P(z) = 0.0476$
 
 2. **Intervalo 2 (171.57 a 208.14):**
-$ p_2 = P(171.57 < X < 208.14) = P\left(\frac{171.57 - 250}{50} < Z < \frac{208.14 - 250}{50}\right) $
+$p_2 = P(171.57 < X < 208.14) = P\left(\frac{171.57 - 250}{50} < Z < \frac{208.14 - 250}{50}\right)$
 
 $p_2 = P(z) = 0.1429$
 
 3. **Intervalo 3 (208.14 a 244.71):**
-$ p_3 = P(208.14 < X < 244.71) = P\left(\frac{208.14 - 250}{50} < Z < \frac{244.71 - 250}{50}\right) $
+$p_3 = P(208.14 < X < 244.71) = P\left(\frac{208.14 - 250}{50} < Z < \frac{244.71 - 250}{50}\right)$
 
 $p_3 = P(z) = 0.2566$
 
 4. **Intervalo 4 (244.71 a 281.28):**
-$ p_4 = P(244.71 < X < 281.28) = P\left(\frac{244.71 - 250}{50} < Z < \frac{281.28 - 250}{50}\right) $
+$p_4 = P(244.71 < X < 281.28) = P\left(\frac{244.71 - 250}{50} < Z < \frac{281.28 - 250}{50}\right)$
 
 $p_4 = P(z) = 0.2763$
 
 5. **Intervalo 5 (281.28 a 317.85):**
-$ p_5 = P(281.28 < X < 317.85) = P\left(\frac{281.28 - 250}{50} < Z < \frac{317.85 - 250}{50}\right) $
+$p_5 = P(281.28 < X < 317.85) = P\left(\frac{281.28 - 250}{50} < Z < \frac{317.85 - 250}{50}\right)$
 
 $p_5 = P(z) = 0.17846$
 
 6. **Intervalo 6 (317.85 a 354.42):**
-$ p_6 = P(317.85 < X < 354.42) = P\left(\frac{317.85 - 250}{50} < Z < \frac{354.42 - 250}{50}\right) $
+$p_6 = P(317.85 < X < 354.42) = P\left(\frac{317.85 - 250}{50} < Z < \frac{354.42 - 250}{50}\right)$
 
 $p_6 = P(z) = 0.0690$
 
 7. **Intervalo 7 ($ \geq 354.42$):**
-$ p_7 = P(X \geq 354.42) = P(Z \geq \frac{354.42 - 250}{50}) $
+$p_7 = P(X \geq 354.42) = P(Z \geq \frac{354.42 - 250}{50})$
 
 $p_7 = P(z) = 0.0184$
 
@@ -235,49 +238,38 @@ p7 para o intervalo 7: 0.0184
 
 
 1. **Intervalo 1 (135.00 a 171.57):**
-$
-Q_1 = \frac{(7 - 3.25)^2}{3.25} \approx 4,32692307692308
-$
+   
+$Q_1 = \frac{(7 - 3.25)^2}{3.25} \approx 4,32692307692308$
 
-2. **Intervalo 2 (171.57 a 208.14):**
-$
-Q_2 = \frac{(13 - 9.10)^2}{9.10} \approx 1,67142857142857
-$
+3. **Intervalo 2 (171.57 a 208.14):**
+   
+$Q_2 = \frac{(13 - 9.10)^2}{9.10} \approx 1,67142857142857$
 
-3. **Intervalo 3 (208.14 a 244.71):**
-$
-Q_3 = \frac{(17 - 16.90)^2}{16.90} \approx 0,000591715976331378
-$
+5. **Intervalo 3 (208.14 a 244.71):**
+   
+$Q_3 = \frac{(17 - 16.90)^2}{16.90} \approx 0,000591715976331378$
 
-4. **Intervalo 4 (244.71 a 281.28):**
-$
-Q_4 = \frac{(16 - 18.20)^2}{18.20} \approx 0,265934065934066
-$
+7. **Intervalo 4 (244.71 a 281.28):**
+   
+$Q_4 = \frac{(16 - 18.20)^2}{18.20} \approx 0,265934065934066$
 
-5. **Intervalo 5 (281.28 a 317.85):**
-$
-Q_5 = \frac{(8 - 11.70)^2}{11.70} \approx 1,17008547008547
-$
+9. **Intervalo 5 (281.28 a 317.85):**
+    
+$Q_5 = \frac{(8 - 11.70)^2}{11.70} \approx 1,17008547008547$
 
-6. **Intervalo 6 (317.85 a 354.42):**
-$
-Q_6 = \frac{(3 - 4.55)^2}{4.55} \approx 0,528021978021978
-$
+11. **Intervalo 6 (317.85 a 354.42):**
+    
+$Q_6 = \frac{(3 - 4.55)^2}{4.55} \approx 0,528021978021978$
 
-7. **Intervalo 7 ($ \geq 354.42$):**
-$
-Q_7 = \displaystyle \frac{(1 - 1.3)^2}{1.3} \approx 0,0692307692307692
-$
+13. **Intervalo 7 ($ \geq 354.42$):**
+    
+$Q_7 = \displaystyle \frac{(1 - 1.3)^2}{1.3} \approx 0,0692307692307692$
 
 Somando todos os $Q_i$:
-$
-Q = Q_1 + Q_2 + Q_3 + Q_4 + Q_5 + Q_6 + Q_7 \approx 8.03
-$
 
+$Q = Q_1 + Q_2 + Q_3 + Q_4 + Q_5 + Q_6 + Q_7 \approx 8.03$
 
-
-
-$ X^2 = \sum \frac{(O_i - E_i)^2}{E_i} \approx 8.03 $
+$X^2 = \sum \frac{(O_i - E_i)^2}{E_i} \approx 8.03$
 
 
 ```
@@ -326,12 +318,12 @@ Q: 8.032215647600262
 ### Conclusão:
 
 
-$H_0: \text{A demanda mensal de termostatos segue uma distribuição normal com média } \mu = 250 \text{ e desvio padrão } \sigma = 50 $
+$H_0: \text{A demanda mensal de termostatos segue uma distribuição normal com média } \mu = 250 \text{ e desvio padrão } \sigma = 50$
 
-Como $Q <\displaystyle \chi^2_{ \displaystyle 6;5\%}$, ou seja, $8.03 < 12.59$, não rejeitamos $H_0$ à 5% de significância. A demanda mensal de termostatos possui, estatisticamente, uma distribuição normal com média 250 e desvio padrão 50.
+Como $Q$ < $\huge\chi^2_{6;(0.05)}$, ou seja, $8.03 < 12.59$, não rejeitamos $H_0$ à 5% de significância. A demanda mensal de termostatos possui, estatisticamente, uma distribuição normal com média 250 e desvio padrão 50.
 
 
-Neste trecho, $\chi^2_{\displaystyle6;5\%}$ representa a estatística de teste do qui-quadrado com 6 graus de liberdade a um nível de significância de 5%. O valor crítico é 12.59, e como o valor calculado $Q$ (8.03) é menor do que o valor crítico, não há evidências para rejeitar a hipótese nula $H_0$.
+Neste trecho, $\chi^2_{\huge 6;(0.05)}$ representa a estatística de teste do qui-quadrado com 6 graus de liberdade a um nível de significância de 5%. O valor crítico é 12.59, e como o valor calculado $Q$ (8.03) é menor do que o valor crítico, não há evidências para rejeitar a hipótese nula $H_0$.
 
 
 ```
@@ -406,7 +398,7 @@ A amostra parece ser normal (não rejeitamos H0)
 Um pesquisador deseja investigar se existe uma relação significativa entre o gênero (masculino ou feminino) e a preferência por assistir à televisão aberta. Para isso, ele coletou dados sobre a observação de 100 pessoas (62 masculinos e 38 femininos) e registrou se cada pessoa assiste ou não à televisão aberta.
 
 
-$ H_0: \text{Não há diferença significativa entre as frequências observadas e esperadas.} $
+$H_0: \text{Não há diferença significativa entre as frequências observadas e esperadas.}$
 
 Isso significa que, se o teste qui-quadrado não rejeitar a hipótese nula, não teremos evidências estatísticas para afirmar que existe uma diferença significativa entre as frequências observadas e esperadas. Em outras palavras, os dados se encaixam bem com as expectativas teóricas, e qualquer diferença observada pode ser devida ao acaso.
 
