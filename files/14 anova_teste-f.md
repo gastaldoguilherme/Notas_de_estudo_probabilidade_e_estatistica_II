@@ -112,9 +112,7 @@ podem ser iguais)
 
 
 
-### Variabilidade total:
-
-$\displaystyle\frac{\text{Variabilidade dos grupos (entre grupos)}}{\text{Variabilidade devido a outros fatores (dentro dos grupos)}} $
+### Variabilidade total: $\displaystyle\frac{\text{Variabilidade dos grupos (entre grupos)}}{\text{Variabilidade devido a outros fatores (dentro dos grupos)}}$
 
 &nbsp;
 
@@ -194,14 +192,12 @@ gl = graus de liberdade
 
 Um experimento foi realizado para avaliar as notas atribuídas a uma mesma comida em três restaurantes diferentes, designados como A, B e C. As notas dadas por diferentes indivíduos foram registradas conforme a tabela abaixo:
 
-$
-\begin{array}{ccc}
-\text{Restaurante A} & \text{Restaurante B} & \text{Restaurante C} \\
-3 & 5 & 5 \\
-2 & 3 & 6 \\
-1 & 4 & 7 \\
-\end{array}
-$
+| Restaurante A | Restaurante B | Restaurante C |
+|---------------|---------------|---------------|
+| 3             | 5             | 5             |
+| 2             | 3             | 6             |
+| 1             | 4             | 7             |
+
 
 Utilize a análise de variância (ANOVA) para determinar se existe alguma diferença significativa nas notas médias atribuídas aos restaurantes. Realize o teste-F para avaliar a hipótese nula de que as médias são iguais em todos os restaurantes.
 
@@ -229,10 +225,6 @@ $SQT = (3-4)^2 +(2-4)^2 + ... +(7-4)^2 = 30$
 SQT = 30
 
 gl = n-1 = 8
-
-
-
-
 
 
 ### 3) Variação entre amostras
@@ -299,13 +291,13 @@ gl-Resíduo: 6
 Com base nas condições estabelecidas, podemos concluir o seguinte:
 
 1. **Teste-F:**
-   - $F_{\displaystyle \text{estatístico}} > F_{\displaystyle \text{crítico}}$
+   - $\huge F_{\displaystyle \text{estatístico}} > \huge F_{\displaystyle \text{crítico}}$
      - $12.00 > 5,14$
      - Condição atendida.
      - Portanto, rejeitamos $H_0$ ao nível de significância de $0.05$.
 
 2. **Valor-p:**
-   - $p$-value < $\alpha$
+   - $\huge p$-value < $\huge \alpha$
      - $0.0080 < 0.05$
      - Condição atendida.
      - Portanto, rejeitamos $H_0$ ao nível de significância de $0.05$.
@@ -466,13 +458,13 @@ gl-Resíduo: 20
 Com base nas condições estabelecidas, podemos concluir o seguinte:
 
 1. **Teste-F:**
-   - $F_{\displaystyle \text{estatístico}} > F_{\displaystyle \text{crítico}}$
+   - $\huge F_{\displaystyle \text{estatístico}} > \huge F_{\displaystyle \text{crítico}}$
      - $213.36 > 3.10$
      - Condição atendida.
      - Portanto, rejeitamos $H_0$ ao nível de significância de $0.05$.
 
 2. **Valor-p:**
-   - $p$-value < $\alpha$
+   - $\huge p$-value < $\huge \alpha$
      - $2.38 e-15 < 0.05$
      - Condição atendida.
      - Portanto, rejeitamos $H_0$ ao nível de significância de $0.05$.
@@ -516,11 +508,14 @@ ANOVA p-value: 2.378983837269639e-15
 
 Um estudo foi conduzido para analisar possíveis diferenças entre três amostras em relação às médias de um determinado conjunto de dados. As amostras, representadas pelos conjuntos de valores abaixo, referem-se a diferentes grupos:
 
-$ \text{Amostra 1:} \quad 64, \, 66, \, 59, \, 65, \, 62 $
+| Amostra 1 | Amostra 2 | Amostra 3 |
+|-----------|-----------|-----------|
+| 64        | 71        | 52        |
+| 66        | 73        | 57        |
+| 59        | 66        | 53        |
+| 65        | 70        | 56        |
+| 62        | 68        | 53        |
 
-$ \text{Amostra 2:} \quad 71, \, 73, \, 66, \, 70, \, 68 $
-
-$ \text{Amostra 3:} \quad 52, \, 57, \, 53, \, 56, \, 53 $
 
 Para determinar se há alguma diferença significativa entre as médias dessas amostras, realize um teste de comparação de médias com um nível de significância de 5%. Apresente os resultados e conclusões relevantes.
 
@@ -541,14 +536,11 @@ Para determinar se há alguma diferença significativa entre as médias dessas a
 - i = 1 até k;
 - j = 1 até n;
 ---
-$
-\displaystyle\sum_{i,k}\left(\displaystyle\frac{T_i^2}{n}\right) = 58880,2
-$
+
+$\huge\sum_{i,k}\left(\displaystyle\frac{T_i^2}{n}\right) = 58880,2$
 
 
-$
-\displaystyle \frac{T^2}{n \cdot k} = 58281,66667
-$
+$\huge \frac{T^2}{n \cdot k} = 58281,66667$
 
 ---
 **Soma dos quadrados ENTRE os grupos ou Soma dos quadrados dos Tratamentos:**
@@ -567,9 +559,9 @@ $MQT = \displaystyle\frac{SQT}{n \cdot k - 1} = 48,38095238$
 ---
 **Soma dos quadrados de DENTRO dos grupos ou Soma dos quadrados dos Resíduos**
 
-$ SQD = SQT - SQE = 78,8 $ ; $ gl = N - k = 12 $
+$SQD = SQT - SQE = 78,8$ ; $gl = N - k = 12$
 
-$ MQD = \displaystyle\frac{SQD}{N - k} = 6,566666667 $
+$MQD = \displaystyle\frac{SQD}{N - k} = 6,566666667$
 
 ---
 
@@ -578,7 +570,7 @@ $ MQD = \displaystyle\frac{SQD}{N - k} = 6,566666667 $
 
 
 
-$F_{\text{calc}} = \displaystyle\frac{S^2_{\displaystyle\text{tratamento}}}{S^2_{\displaystyle\text{resíduo}}} = 45,57360406$
+$\huge F_{\text{calc}} = \huge \frac{S^2_{\huge \text{tratamento}}}{S^2_{\huge \text{resíduo}}} = 45,57360406$
 
 
 | FV (Fontes de Variação) | gl  | SQ         | QM ou S^2      | Fcalc         | Ftab (2,12,5%) |
@@ -618,12 +610,12 @@ Os dados coletados, representados na tabela abaixo, indicam as médias de algum 
 As hipóteses a serem testadas são as seguintes:
 
 - **Hipóteses para as Linhas:**
-  - $ H_{01} $: As médias em todas as linhas são iguais ($ M_1 = M_2 = \ldots = M_k $).
-  - $ H_{11} $: Pelo menos uma das médias das linhas é diferente.
+  - $H_{01}$: As médias em todas as linhas são iguais ($M_1 = M_2 = \ldots = M_k$).
+  - $H_{11}$: Pelo menos uma das médias das linhas é diferente.
 
 - **Hipóteses para as Colunas:**
-  - $ H_{02} $: As médias em todas as colunas são iguais ($ M_1 = M_2 = \ldots = M_n $).
-  - $ H_{21} $: Pelo menos uma das médias das colunas é diferente.
+  - $H_{02}$: As médias em todas as colunas são iguais ($M_1 = M_2 = \ldots = M_n$).
+  - $H_{21}$: Pelo menos uma das médias das colunas é diferente.
 
 
 
@@ -646,52 +638,55 @@ As hipóteses a serem testadas são as seguintes:
 
 ---
 
-$ Q = \displaystyle \sum_{i, k} \sum_{j, n} x_{ij}^2 = 258,83 $
+$Q = \displaystyle \sum_{i, k} \sum_{j, n} x_{ij}^2 = 258,83$
 
-$ \displaystyle \sum_{i, k} \left(\displaystyle \frac{T_i^2}{n_i}\right) = 253,4416667 $
+$\displaystyle \sum_{i, k} \left(\displaystyle \frac{T_i^2}{n_i}\right) = 253,4416667$
 
-$ \displaystyle  \sum_{j, n} \left(\displaystyle \frac{T_j^2}{k_j}\right) = 258,155 $
+$\displaystyle  \sum_{j, n} \left(\displaystyle \frac{T_j^2}{k_j}\right) = 258,155$
 
-$ \displaystyle \frac{T^2}{n \cdot k} = 253,0008333 $
+$\displaystyle \frac{T^2}{n \cdot k} = 253,0008333$
 
 ---
 
 **Soma dos quadrados ENTRE LINHAS:**
 
-$ SQL = \displaystyle \sum_{i, k} \left(\frac{T_i^2}{n_i}\right) - \left(\frac{T^2}{n \cdot k}\right) = 0,440833333 $ ;
-$ gl = k - 1 = 1 $
+$SQL = \displaystyle \sum_{i, k} \left(\frac{T_i^2}{n_i}\right) - \left(\frac{T^2}{n \cdot k}\right) = 0,440833333$ ;
+$gl = k - 1 = 1$
 
-$ MQL = \frac{SQL}{k-1} = 0,440833333 $
+$MQL = \frac{SQL}{k-1} = 0,440833333$
 
 ---
 
 **Soma dos quadrados ENTRE COLUNAS:**
 
-$ SQC = \displaystyle \sum_{j, n} \left(\frac{T_j^2}{k_j}\right) - \left(\frac{T^2}{n \cdot k}\right) = 5,154166667 $ ;
-$ gl = n - 1 = 5 $
+$SQC = \displaystyle \sum_{j, n} \left(\frac{T_j^2}{k_j}\right) - \left(\frac{T^2}{n \cdot k}\right) = 5,154166667$ ;
 
-$ MQC = \displaystyle\frac{SQC}{n-1} = 1,030833333 $
+$gl = n - 1 = 5$
+
+$MQC = \displaystyle\frac{SQC}{n-1} = 1,030833333$
 
 ---
 **Soma dos quadrados TOTAL**
 
-$ SQT = Q - \displaystyle\left(\frac{T^2}{n \cdot k}\right) = 5,829166667 $; 
-$ gl = n \cdot k - 1 = 11 $
+$SQT = Q - \displaystyle\left(\frac{T^2}{n \cdot k}\right) = 5,829166667$; 
+
+$gl = n \cdot k - 1 = 11$
 
 ---
 
 **Soma dos quadrados de DENTRO dos grupos ou Soma dos quadrados dos Resíduos**
 
-$ SQD_{\text{resíduo}} = SQT - SQL - SQC = 0,234166667 $;
-$ gl = (n-1) \cdot (k-1) = 5 $
+$SQD_{\text{resíduo}} = SQT - SQL - SQC = 0,234166667$;
 
-$ MQD = \displaystyle\frac{SQD}{N-k} = 0,046833333 $
+$gl = (n-1) \cdot (k-1) = 5$
+
+$MQD = \displaystyle\frac{SQD}{N-k} = 0,046833333$
 
 ---
 
-$ F_{\text{calc}} = \displaystyle\frac{S^2_{\displaystyle\text{tratamento - linha}}}{S^2_{\text{resíduo}}} = 9,412811388 $
+$\huge F_{\text{calc}} = \displaystyle\frac{S^2_{\displaystyle\text{tratamento - linha}}}{S^2_{\text{resíduo}}} = 9,412811388$
 
-$ F_{\text{calc}} = \displaystyle \frac{S^2_{\displaystyle\text{tratamento - coluna}}}{S^2_{\text{resíduo}}} = 22,01067616 $
+$\huge F_{\text{calc}} = \displaystyle \frac{S^2_{\displaystyle\text{tratamento - coluna}}}{S^2_{\text{resíduo}}} = 22,01067616$
 
 ---
 
@@ -704,11 +699,13 @@ $ F_{\text{calc}} = \displaystyle \frac{S^2_{\displaystyle\text{tratamento - col
 
 
 
-- $ F_{\text{calc\_linhas}} = 9,413 < F_{\text{tab (1, 5, 1\%)}} = 16,26 $
-  - Não rejeitar $ H_{01} $, ou seja, média igual em todas as linhas com um nível de significância $ \alpha = 1\% $.
+- $F{\text{calc.linhas}} = 9,413$ < $F_{\text{tab (1, 5, (0.01))}} = 16,26$
 
-- $ F_{\text{calc\_colunas}} = 22,011 > F_{\text{tab (5, 5, 1\%)}} = 10,97 $
-  - Rejeitar $ H_{02} $, ou seja, a média de pelo menos uma coluna é diferente.
+  - Não rejeitar $H_{01}$, ou seja, média igual em todas as linhas com um nível de significância $\alpha = 1\%$.
+
+- $F{\text{calc.colunas}} = 22,011$ > $F_{\text{tab (5, 5, (0.01)}} = 10,97$
+
+  - Rejeitar $H_{02}$, ou seja, a média de pelo menos uma coluna é diferente.
 
 
 
@@ -750,23 +747,23 @@ Foram registrados os tempos, em segundos, necessários para que quatro operário
 
 ---
 
-$ \displaystyle\sum_{i,k} \displaystyle \frac{T_i^2}{n \cdot r} = \frac {59^2}{4\cdot  2} + ... + \frac {125^2}{4\cdot  2} = 3638.5 $
+$\displaystyle\sum_{i,k} \displaystyle \frac{T_i^2}{n \cdot r} = \frac {59^2}{4\cdot  2} + ... + \frac {125^2}{4\cdot  2} = 3638.5$
 
 ---
 
-$ \displaystyle\sum_{j,n} \displaystyle\frac{T_j^2}{k \cdot r} = \frac {68^2}{3\cdot  2} + ... + \frac {73^2}{3\cdot  2} = 3407 $
+$\displaystyle\sum_{j,n} \displaystyle\frac{T_j^2}{k \cdot r} = \frac {68^2}{3\cdot  2} + ... + \frac {73^2}{3\cdot  2} = 3407$
 
 ---
 
-$ \displaystyle\sum_{i,k} \displaystyle\sum_{j,n} \displaystyle\frac{T_{ij}^2}{r}  = \frac {(9+7)^2 + (1+2)^2  + ... + (18+16)^2 + (/assets/14+15)^2}{2} = 37.66 $
+$\displaystyle\sum_{i,k} \displaystyle\sum_{j,n} \displaystyle\frac{T_{ij}^2}{r}  = \frac {(9+7)^2 + (1+2)^2  + ... + (18+16)^2 + (/assets/14+15)^2}{2} = 37.66$
 
 ---
 
-$\displaystyle \frac{T^2}{n \cdot k \cdot r}  = \frac {(59 + 100 +25)^2}{4\cdot  3\cdot 2 }  = 3360.67 $
+$\displaystyle \frac{T^2}{n \cdot k \cdot r}  = \frac {(59 + 100 +25)^2}{4\cdot  3\cdot 2 }  = 3360.67$
 
 ---
 
-$ Q = \displaystyle\sum_{i,k} \sum_{j,n} \sum_{1,r} X_{ijr}^2  = 9^2 + 7^2 + ... + 14^2 + 15^2  = 3854 $
+$Q = \displaystyle\sum_{i,k} \sum_{j,n} \sum_{1,r} X_{ijr}^2  = 9^2 + 7^2 + ... + 14^2 + 15^2  = 3854$
 
 ---
 
@@ -774,11 +771,11 @@ $ Q = \displaystyle\sum_{i,k} \sum_{j,n} \sum_{1,r} X_{ijr}^2  = 9^2 + 7^2 + ...
 
 1. Soma Total dos Quadrados (SQT):
 
-$ SQT = Q - \displaystyle\frac{T^2}{nkr} = 493.3333333 $ ; $ \text{gl = } \ knr-1 = \ 23 $
+$SQT = Q - \displaystyle\frac{T^2}{nkr} = 493.3333333$ ; $\text{gl = } \ knr-1 = \ 23$
 
 3. Médias dos Quadrados para SQT (MQT):
 
-$ MQT = \displaystyle \frac{SQT}{knr-1} = 21.44927536 $
+$MQT = \displaystyle \frac{SQT}{knr-1} = 21.44927536$
 
 ---
 
@@ -786,32 +783,32 @@ $ MQT = \displaystyle \frac{SQT}{knr-1} = 21.44927536 $
 
 4. Soma dos Quadrados para Linhas (SQL):
 
-$ SQL = \sum_{i,k} \displaystyle\frac{Ti^2}{nir} - \frac{T^2}{nkr} = 277.5833333 $ ; $ \text{gl = } \ k-1 = \ 2 $
+$SQL = \sum_{i,k} \displaystyle\frac{Ti^2}{nir} - \frac{T^2}{nkr} = 277.5833333$ ; $\text{gl = } \ k-1 = \ 2$
 
 6. Médias dos Quadrados para SQL (MQL):
 
-$ MQL = \displaystyle\frac{SQL}{k-1} = 138.7916667 $
+$MQL = \displaystyle\frac{SQL}{k-1} = 138.7916667$
 
 ---
 
 
 7. Soma dos Quadrados para Colunas (SQC):
 
-$ SQC = \displaystyle\sum_{j,n} \displaystyle\frac{Tj^2}{kjr} - \frac{T^2}{nkr} = 46.33333333 $ ; $ \text{gl = } \ n-1 = \ 3 $
+$SQC = \displaystyle\sum_{j,n} \displaystyle\frac{Tj^2}{kjr} - \frac{T^2}{nkr} = 46.33333333$ ; $\text{gl = } \ n-1 = \ 3$
 
 9. Médias dos Quadrados para SQC (MQC):
 
-$ MQC = \displaystyle \frac{SQC}{n-1} = 15.44444444 $
+$MQC = \displaystyle \frac{SQC}{n-1} = 15.44444444$
 
 ---
 
 10. Soma dos Quadrados para Tratamentos (SQtr):
 
-$ SQtr = \displaystyle\sum_{i,k} \sum_{j,n} \displaystyle \frac{Tij^2}{r} - T^2  = 405.3333333 $ ; $ \text{gl = } \ n.k-1 = \ 11 $
+$SQtr = \displaystyle\sum_{i,k} \sum_{j,n} \displaystyle \frac{Tij^2}{r} - T^2  = 405.3333333$ ; $\text{gl = } \ n.k-1 = \ 11$
 
 12. Médias dos Quadrados para SQtr (MQtr):
 
-$ MQtr = \displaystyle\frac{SQtr}{n.k-1} = 36.84848485 $
+$MQtr = \displaystyle\frac{SQtr}{n.k-1} = 36.84848485$
 
 ---
 
@@ -819,22 +816,22 @@ $ MQtr = \displaystyle\frac{SQtr}{n.k-1} = 36.84848485 $
 
 13. Soma dos Quadrados para a Interação (SQI):
 
-$ SQI = SQtr - SQL - SQC = 81.41666667 $ ; $ \text{gl:} \ (k-1) \times (n-1) = \ 6 $
+$SQI = SQtr - SQL - SQC = 81.41666667$ ; $\text{gl:} \ (k-1) \times (n-1) = \ 6$
 
 15. Médias dos Quadrados para SQI (MQI):
 
-$ MQI = \displaystyle\frac{SQI}{(k-1) \times (n-1)} = 13.56944444 $
+$MQI = \displaystyle\frac{SQI}{(k-1) \times (n-1)} = 13.56944444$
 
 ---
 
 
 16. Soma dos Quadrados Residual (SQR):
 
-$ SQR = SQT - SQtr = 88 $ ; $ \text{gl = } \ n.k.(r-1) = \ 12 $
+$SQR = SQT - SQtr = 88$ ; $\text{gl = } \ n.k.(r-1) = \ 12$
 
 18. Médias dos Quadrados para SQR (MQR):
 
-$ MQR = \displaystyle\frac{SQR}{n.k.(r-1)} = 7.333333333 $
+$MQR = \displaystyle\frac{SQR}{n.k.(r-1)} = 7.333333333$
 
 ---
 
@@ -862,15 +859,15 @@ $ MQR = \displaystyle\frac{SQR}{n.k.(r-1)} = 7.333333333 $
 
 ### Decisões
 
-- $ F \text{ Interação} = 1.850378788 < 3 $: Não há interação significativa.
+- $F \text{ Interação} = 1.850378788 < 3$: Não há interação significativa.
 - Reorganizamos a tabela considerando apenas os efeitos principais (métodos e operários).
 - Recalculamos:
 
-$ \text{SQ Residual = SQI + SQR = 81.4167 + 88 = 169.4167  } $, 
+$\text{SQ Residual = SQI + SQR = 81.4167 + 88 = 169.4167  }$, 
 
-$ \text{QM Residual = SQR / gl = 169.4167 / 12 = 14.1180} $ 
+$\text{QM Residual = SQR / gl = 169.4167 / 12 = 14.1180}$ 
 
-$ \text{Fcalc} $.
+$\text{Fcalc}$.
 
 
 
@@ -897,33 +894,6 @@ Conclusão sobre as respostas da ANOVA 2 fatores com repetição:
 - $F \text{ Entre Tratamentos} = 2.610025489 < F \text{ tab, 5\%} = 2.72$: Não há diferença significativa entre os tratamentos. Não rejeitamos a hipótese nula de igualdade entre os tratamentos.
 
 Essas conclusões são baseadas nos resultados dos testes de hipóteses utilizando a análise de variância (ANOVA) com um nível de significância de 5%. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
