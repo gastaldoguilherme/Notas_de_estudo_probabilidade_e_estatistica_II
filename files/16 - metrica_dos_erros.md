@@ -12,36 +12,40 @@ As métricas de erro são utilizadas para avaliar o desempenho de modelos predit
 
 ### 1. **Erro Absoluto Médio (MAE):**
    - **Fórmula:**
-     $ MAE = \displaystyle\frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i| $
+     $MAE = \displaystyle\frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|$
    - **Descrição:**
      - Média das diferenças absolutas entre os valores reais ($y_i$) e os valores previstos ($\hat{y}_i$).
      - Útil quando os erros positivos e negativos têm o mesmo impacto.
 
 ### 2. **Erro Quadrático Médio (MSE):**
    - **Fórmula:**
-     $ MSE = \displaystyle\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 $
+     $MSE = \displaystyle\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
    - **Descrição:**
      - Média das diferenças quadráticas entre os valores reais ($y_i$) e os valores previstos ($\hat{y}_i$).
      - Penaliza mais os erros grandes.
 
 ### 3. **Raiz do Erro Quadrático Médio (RMSE):**
    - **Fórmula:**
-     $ RMSE = \sqrt{MSE} $
+     $RMSE = \sqrt{MSE}$
    - **Descrição:**
      - Raiz quadrada do MSE, proporcionando uma métrica na mesma escala dos valores originais.
      - Facilita a interpretação em termos das unidades da variável de resposta.
 
 ### 4. **Erro Percentual Absoluto Médio (MAPE):**
+
    - **Fórmula:**
-     $ MAPE = \displaystyle\frac{1}{n} \sum_{i=1}^{n} \left( \displaystyle\frac{|y_i - \hat{y}_i|}{|y_i|} \right) \times 100 $
+     
+     $MAPE = \displaystyle\frac{1}{n} \sum_{i=1}^{n} \left( \displaystyle\frac{|y_i - \hat{y}_i|}{|y_i|} \right) \times 100$
+     
    - **Descrição:**
+     
      - Média dos erros percentuais absolutos em relação aos valores reais.
      - Expressa os erros como uma porcentagem do valor real, útil para interpretar a precisão relativa.
 
 ### 5. **Coeficiente de Determinação ($R^2$):**
    - **Fórmula:**
    
-     $ R^2 = 1 - \displaystyle\frac{\displaystyle\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\displaystyle\sum_{i=1}^{n} (y_i - \bar{y})^2} $
+     $R^2 = 1 - \huge\frac{\huge\sum\limits_{i=1}^{n} (y_i - \hat{y}_i)^2}{\huge\sum\limits_{i=1}^{n} (y_i - \bar{y})^2}$
 
 
    - **Descrição:**
