@@ -13,47 +13,55 @@ O teste t de Student é uma técnica estatística utilizada para testar se há d
 
 1. **Teste t para uma Amostra (Média Populacional Conhecida):**
 
-   $ t = \displaystyle\frac{\bar{X} - \mu_0}{\displaystyle \frac{s}{\displaystyle \sqrt{n}}} $
+   $t = \displaystyle\frac{\bar{X} - \mu_0}{\displaystyle \frac{s}{\displaystyle \sqrt{n}}}$
+   
    - **Variáveis:**
-     - $ \bar{X} $: Média da amostra
-     - $ \mu_0 $: Média populacional sob a hipótese nula
-     - $ s $: Desvio padrão da amostra
-     - $ n $: Tamanho da amostra
+     - $\bar{X}$: Média da amostra
+     - $\mu_0$: Média populacional sob a hipótese nula
+     - $s$: Desvio padrão da amostra
+     - $n$: Tamanho da amostra
+       
    - **Descrição:**
      - Usado quando a média populacional é conhecida e queremos testar se uma amostra difere significativamente.
 
-2. **Teste t para uma Amostra (Média Populacional Desconhecida):**
+3. **Teste t para uma Amostra (Média Populacional Desconhecida):**
 
-   $ t = \displaystyle\frac{\bar{X} - \mu_0}{\displaystyle\frac{s}{\sqrt{n}}} $
+   $t = \displaystyle\frac{\bar{X} - \mu_0}{\displaystyle\frac{s}{\sqrt{n}}}$
+   
    - **Variáveis:**
-     - $ \bar{X} $: Média da amostra
-     - $ \mu_0 $: Média populacional sob a hipótese nula
-     - $ s $: Desvio padrão da amostra
-     - $ n $: Tamanho da amostra
+     - $\bar{X}$: Média da amostra
+     - $\mu_0$: Média populacional sob a hipótese nula
+     - $s$: Desvio padrão da amostra
+     - $n$: Tamanho da amostra
+      
    - **Descrição:**
      - Usado quando a média populacional é desconhecida e queremos testar se uma amostra difere significativamente.
 
-3. **Teste t para Duas Amostras (Amostras Independentes):**
+5. **Teste t para Duas Amostras (Amostras Independentes):**
 
-   $ t = \displaystyle\frac{\bar{X}_1 - \bar{X}_2}{\sqrt{\displaystyle\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} $
+   $t = \displaystyle\frac{\bar{X}_1 - \bar{X}_2}{\sqrt{\displaystyle\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$
+   
    - **Variáveis:**
-     - $ \bar{X}_1 $ e $ \bar{X}_2 $: Médias das amostras 1 e 2
-     - $ s_1 $ e $ s_2 $: Desvios padrões das amostras 1 e 2
-     - $ n_1 $ e $ n_2 $: Tamanhos das amostras 1 e 2
+     - $\bar{X}_1$ e $\bar{X}_2$: Médias das amostras 1 e 2
+     - $s_1$ e $s_2$: Desvios padrões das amostras 1 e 2
+     - $n_1$ e $n_2$: Tamanhos das amostras 1 e 2
+     - 
    - **Descrição:**
      - Usado para testar se as médias de duas amostras independentes são significativamente diferentes.
 
 ### Testes de Hipótese:
 
 1. **Teste t para uma Amostra:**
+   
    - **Hipóteses:**
-     - $ H_0 $: $ \mu = \mu_0 $ (Média populacional é igual a $ \mu_0 $)
-     - $ H_1 $: $ \mu \neq \mu_0 $ (Média populacional é diferente de $ \mu_0 $)
+     - $H_0$: $\mu = \mu_0$ (Média populacional é igual a $\mu_0$)
+     - $H_1$: $\mu \neq \mu_0$ (Média populacional é diferente de $\mu_0$)
 
-2. **Teste t para Duas Amostras (Amostras Independentes):**
+3. **Teste t para Duas Amostras (Amostras Independentes):**
+   
    - **Hipóteses:**
-     - $ H_0 $: $ \mu_1 = \mu_2 $ (Médias populacionais são iguais)
-     - $ H_1 $: $ \mu_1 \neq \mu_2 $ (Médias populacionais são diferentes)
+     - $H_0$: $\mu_1 = \mu_2$ (Médias populacionais são iguais)
+     - $H_1$: $\mu_1 \neq \mu_2$ (Médias populacionais são diferentes)
 
 ### Quando Usar o Teste t de Student:
 
@@ -90,8 +98,8 @@ Produto B: 5, 5, 5, 8, 7, 8, 10, 7
 Assumindo que as amostras são independentes, você decide realizar um Teste t para Duas Amostras (Amostras Independentes) para comparar as médias dos tempos de ação entre os dois produtos. Além disso, você deseja verificar se há uma diferença significativa nos custos.
 
 **Hipóteses:**
-- $ H_0 $: As médias populacionais dos tempos de ação são iguais para os dois produtos ( $ \mu_A = \mu_B $ ).
-- $ H_1 $: As médias populacionais dos tempos de ação são diferentes para os dois produtos ( $ \mu_A \neq \mu_B $ ).
+- $H_0$: As médias populacionais dos tempos de ação são iguais para os dois produtos ( $\mu_A = \mu_B$ ).
+- $H_1$: As médias populacionais dos tempos de ação são diferentes para os dois produtos ( $\mu_A \neq \mu_B$ ).
 
 **Nível de Significância:**
 - $\alpha = 0,05$
@@ -100,12 +108,12 @@ Assumindo que as amostras são independentes, você decide realizar um Teste t p
 - Teste t para Duas Amostras (Amostras Independentes)
 
 **Variáveis:**
-- $ \bar{X}_A $ e $ \bar{X}_B $: Médias dos tempos de ação para os produtos A e B, respectivamente.
-- $ s_A $ e $ s_B $: Desvios padrões dos tempos de ação para os produtos A e B, respectivamente.
-- $ n_A $ e $ n_B $: Tamanhos das amostras para os produtos A e B, respectivamente.
+- $\bar{X}_A$ e $\bar{X}_B$: Médias dos tempos de ação para os produtos A e B, respectivamente.
+- $s_A$ e $s_B$: Desvios padrões dos tempos de ação para os produtos A e B, respectivamente.
+- $n_A$ e $n_B$: Tamanhos das amostras para os produtos A e B, respectivamente.
 
 **Tomando uma Decisão:**
-- Rejeitar $ H_0 $ se o valor p for menor que $\alpha$.
+- Rejeitar $H_0$ se o valor p for menor que $\alpha$.
 
 **Pergunta:**
 Considerando os resultados do teste t, qual produto você recomendaria para a compra de 1000 unidades com base nos critérios de tempo e custo? Justifique sua resposta.
@@ -118,8 +126,8 @@ Para realizar o teste t para duas amostras independentes, precisamos seguir algu
 
 #### Formular as hipóteses estatísticas:
 
-- $ H_0 $: As médias populacionais dos tempos de ação são iguais para os dois produtos ( $ \mu_A = \mu_B $ ).
-- $ H_1 $: As médias populacionais dos tempos de ação são diferentes para os dois produtos ( $ \mu_A \neq \mu_B $ ).
+- $H_0$: As médias populacionais dos tempos de ação são iguais para os dois produtos ( $\mu_A = \mu_B$ ).
+- $H_1$: As médias populacionais dos tempos de ação são diferentes para os dois produtos ( $\mu_A \neq \mu_B$ ).
 
 #### Definir o nível de significância:
 
@@ -143,12 +151,12 @@ Dados de tempo para o produto B:
 
 #### Calcular as estatísticas amostrais necessárias:
 
-- $ \bar{X}_A $: Média dos tempos de ação para o produto A.
-- $ \bar{X}_B $: Média dos tempos de ação para o produto B.
-- $ s_A $: Desvio padrão dos tempos de ação para o produto A.
-- $ s_B $: Desvio padrão dos tempos de ação para o produto B.
-- $ n_A $: Tamanho da amostra para o produto A.
-- $ n_B $: Tamanho da amostra para o produto B.
+- $\bar{X}_A$: Média dos tempos de ação para o produto A.
+- $\bar{X}_B$: Média dos tempos de ação para o produto B.
+- $s_A$: Desvio padrão dos tempos de ação para o produto A.
+- $s_B$: Desvio padrão dos tempos de ação para o produto B.
+- $n_A$: Tamanho da amostra para o produto A.
+- $n_B$: Tamanho da amostra para o produto B.
 
 
 **Produto A:**
@@ -165,37 +173,37 @@ Dados de tempo para o produto B:
 
 ### t-estatístico:
 
-$t_{\text{estatístico}} = 0.8427009716003844$
+$t_{\huge\text{estatístico}} = 0.8427009716003844$
 
 #### Calcular o valor p usando o teste t para duas amostras independentes.
 
 
 
-$ t_{\text{stat}} = \displaystyle \frac{\bar{X}_A - \bar{X}_B}{\sqrt{\displaystyle \frac{s_A^2}{n_A} + \displaystyle \frac{s_B^2}{n_B}}} $
+$t_{\text{stat}} = \displaystyle \frac{\bar{X}_A - \bar{X}_B}{\sqrt{\displaystyle \frac{s_A^2}{n_A} + \displaystyle \frac{s_B^2}{n_B}}}$
 
 
-$ t_{\displaystyle\text{stat}} = \displaystyle\frac{7,75 - 6,875}{\sqrt{\displaystyle\frac{(2,314550249)^2}{8} + \frac{(1,807721534)^2}{8}}} \approx 0.8427009716003844 $
+$t_{\displaystyle\text{stat}} = \displaystyle\frac{7,75 - 6,875}{\sqrt{\displaystyle\frac{(2,314550249)^2}{8} + \frac{(1,807721534)^2}{8}}} \approx 0.8427009716003844$
 
 
 #### Calcular os graus de liberdade para o teste t para duas amostras independentes 
 
-$ \text{Graus de Liberdade} = \displaystyle\frac{\left(\displaystyle\frac{s_1^2}{n_1} + \displaystyle\frac{s_2^2}{n_2}\right)^2}{\displaystyle\frac{\left(\displaystyle\frac{\left(\displaystyle\frac{s_1^2}{n_1}\right)^2}{n_1-1}\right)}{n_1-1} + \displaystyle\frac{\left(\displaystyle\frac{\left(\displaystyle\frac{s_2^2}{n_2}\right)^2}{n_2-1}\right)}{n_2-1}} $
+$\text{Graus de Liberdade} = \displaystyle\frac{\left(\displaystyle\frac{s_1^2}{n_1} + \displaystyle\frac{s_2^2}{n_2}\right)^2}{\displaystyle\frac{\left(\displaystyle\frac{\left(\displaystyle\frac{s_1^2}{n_1}\right)^2}{n_1-1}\right)}{n_1-1} + \displaystyle\frac{\left(\displaystyle\frac{\left(\displaystyle\frac{s_2^2}{n_2}\right)^2}{n_2-1}\right)}{n_2-1}}$
 
 Substituindo com os valores fornecidos:
 
-$ \text{Graus de Liberdade} = \displaystyle\frac{\left(\displaystyle\frac{(2.314550249)^2}{8} + \displaystyle\frac{(1.807721534)^2}{8}\right)^2}{\displaystyle\frac{\left(\displaystyle\frac{\left(\displaystyle\frac{(2.314550249)^2}{8}\right)^2}{8-1}\right)}{8-1} + \displaystyle\frac{\left(\displaystyle\frac{\left(\displaystyle\frac{(1.807721534)^2}{8}\right)^2}{8-1}\right)}{8-1}} $
+$\text{Graus de Liberdade} = \displaystyle\frac{\left(\displaystyle\frac{(2.314550249)^2}{8} + \displaystyle\frac{(1.807721534)^2}{8}\right)^2}{\displaystyle\frac{\left(\displaystyle\frac{\left(\displaystyle\frac{(2.314550249)^2}{8}\right)^2}{8-1}\right)}{8-1} + \displaystyle\frac{\left(\displaystyle\frac{\left(\displaystyle\frac{(1.807721534)^2}{8}\right)^2}{8-1}\right)}{8-1}}$
 
 
 
-$ \text{Graus de Liberdade} \approx \frac{1.154902828}{0.023983662} $
+$\huge\text{Graus de Liberdade} \approx \frac{1.154902828}{0.023983662}$
 
-$ \text{Graus de Liberdade} \approx 48.14565154 $
+$\huge\text{Graus de Liberdade} \approx 48.14565154$
 
 Então, os graus de liberdade para o teste t são aproximadamente $48.15$.
 
 ### t-crítico:
 
-$t_{\text{crítico}} = 2.0106347546964454$
+$\huge t_{\text{crítico}} = 2.0106347546964454$
 
 
 
@@ -225,7 +233,7 @@ O valor crítico do t para alpha = 0.05 e gl = 48.14565154 é: 2.010634754696445
 ### p-value:
 
 
-$ p_{\text{value}} = \text{P}(|t| > |t_{\text{stat ; gl = 0.8427 ;  48.15 }}|) \approx 0.4135613479392021$
+$\huge p_{\text{value}} = \text{P}(|t| > |t_{\text{stat ; gl = 0.8427 ;  48.15 }}|) \approx 0.4135613479392021$
 
 
 
@@ -274,13 +282,16 @@ Recomendação: Produto A é mais econômico em termos de custo por unidade.
 
 
 1. **Teste-t:**
-   - $t_{\displaystyle \text{estatístico}} < t_{\displaystyle \text{crítico}}$
+
+   - $\huge t_{\displaystyle \text{estatístico}} < \huge t_{\displaystyle \text{crítico}}$
+   
      - $0.8427 < 2.011$
      - Condição NÃO atendida.
      - Portanto, NÃO rejeitamos $H_0$ ao nível de significância de $0.05$.
 
-2. **Valor-p:**
-   - $p$-value > $\alpha$
+3. **Valor-p:**
+   
+   - $\huge p$-value > $\alpha$
      - $0.4135 > 0.05$
      - Condição NÃO atendida.
      - Portanto, NÃO rejeitamos $H_0$ ao nível de significância de $0.05$.
@@ -291,16 +302,19 @@ Recomendação: Produto A é mais econômico em termos de custo por unidade.
 Com base nos resultados do teste-t realizado para comparar o tempo de ação entre os produtos A e B, podemos tirar as seguintes conclusões:
 
 1. **Teste-t:**
+   
    - O valor do t-estatístico calculado ($0.8427$) é menor que o valor crítico do t ($2.011$) para um nível de significância de $0.05$ e $48$ graus de liberdade.
    - Portanto, a condição para rejeitar a hipótese nula não é atendida.
    - Consequentemente, NÃO rejeitamos $H_0$ ao nível de significância de $0.05$.
 
-2. **Valor-p:**
+3. **Valor-p:**
+   
    - O valor-p calculado ($0.4135$) é maior que o nível de significância ($0.05$).
    - Assim, a condição para rejeitar a hipótese nula não é atendida.
    - Concluímos que NÃO rejeitamos $H_0$ ao nível de significância de $0.05$.
 
 **Resultado Final:**
+
 Com base nas análises estatísticas realizadas, não há evidências estatísticas significativas para afirmar que há diferença no tempo de ação médio entre os produtos A e B. Portanto, ao nível de significância de $0.05$, não podemos concluir que um produto é superior ao outro em termos de tempo de ação. 
 
 
