@@ -13,32 +13,36 @@ O teste de Tukey, também conhecido como Procedimento de Tukey, é uma técnica 
 ### Procedimento de Tukey:
 
 1. **Diferenças Entre Pares de Médias:**
-   $ \text{Diferença Entre Médias} = \bar{X}_i - \bar{X}_j $
-   - **Variáveis:**
-     - $ \bar{X}_i $ e $ \bar{X}_j $: Médias dos grupos a serem comparados.
-
-2. **Intervalo de Confiança para Diferenças Entre Médias:**
-
-   $ \text{Intervalo de Confiança} = \bar{X}_i - \bar{X}_j \pm q \cdot \sqrt{\frac{2 \cdot \text{MSE}}{n}} $
-   - **Variáveis:**
-     - $ \text{MSE} $: Média dos quadrados dos erros (residuals) do teste ANOVA.
-     - $ n $: Número de observações em cada grupo.
-
-3. **Estatística de Teste para Cada Par de Médias:**
-
-   $ q = \displaystyle\frac{\bar{X}_i - \bar{X}_j}{\sqrt{\displaystyle\frac{MSE}{n}}} $
+   $\text{Diferença Entre Médias} = \bar{X}_i - \bar{X}_j$
    
    - **Variáveis:**
-     - $ \bar{X}_i $ e $ \bar{X}_j $: Médias dos grupos a serem comparados.
-     - $ \text{MSE} $: Média dos quadrados dos erros (residuals) do teste ANOVA.
-     - $ n $: Número de observações em cada grupo.
+     - $\bar{X}_i$ e $\bar{X}_j$: Médias dos grupos a serem comparados.
+
+3. **Intervalo de Confiança para Diferenças Entre Médias:**
+
+   $\text{Intervalo de Confiança} = \bar{X}_i - \bar{X}_j \pm q \cdot \sqrt{\frac{2 \cdot \text{MSE}}{n}}$
+   
+   - **Variáveis:**
+     - $\text{MSE}$: Média dos quadrados dos erros (residuals) do teste ANOVA.
+       
+     - $n$: Número de observações em cada grupo.
+
+5. **Estatística de Teste para Cada Par de Médias:**
+
+   $q = \displaystyle\frac{\bar{X}_i - \bar{X}_j}{\sqrt{\displaystyle\frac{MSE}{n}}}$
+   
+   - **Variáveis:**
+     - $\bar{X}_i$ e $\bar{X}_j$: Médias dos grupos a serem comparados.
+     - $\text{MSE}$: Média dos quadrados dos erros (residuals) do teste ANOVA.
+     - $n$: Número de observações em cada grupo.
 
 ### Testes de Hipótese:
 
 1. **Teste de Hipótese para Diferenças Entre Médias:**
+   
    - **Hipóteses:**
-     - $ H_0 $: $ \bar{X}_i = \bar{X}_j $ (Não há diferença significativa)
-     - $ H_1 $: $ \bar{X}_i \neq \bar{X}_j $ (Há diferença significativa)
+     - $H_0$: $\bar{X}_i = \bar{X}_j$ (Não há diferença significativa)
+     - $H_1$: $\bar{X}_i \neq \bar{X}_j$ (Há diferença significativa)
 
 ### Procedimento Geral:
 
@@ -114,15 +118,15 @@ $s^2 (variância) = QM_{\displaystyle\text{resíduo}} = 3.4642$
 
 ## DMS (DIFERENÇA MÍNIMA SIGNIFICATIVA)
 
-- $ \Delta = q \cdot \displaystyle\frac{S}{\displaystyle\sqrt{r}} $
+- $\Delta = q \cdot \displaystyle\frac{S}{\displaystyle\sqrt{r}}$
 
 - Valor de q (tabela) (5; 12; 0.05): 4,51
 
-- $ \displaystyle S = \sqrt{\text{quadrado médio do resíduo}}: 1,861236148$
+- $\displaystyle S = \sqrt{\text{quadrado médio do resíduo}}: 1,861236148$
 
-- $ \displaystyle r = \sqrt{\text{número de repetições (4)}}: 2$
+- $\displaystyle r = \sqrt{\text{número de repetições (4)}}: 2$
 
-- $ \Delta $: 4,197087515
+- $\Delta$: 4,197087515
 
 - DMS, UNIDADE GRAMAS
 
@@ -228,21 +232,21 @@ GL-Resíduo: 20
 
 **Número de combinações:**
 
-$ C(n, k) = \displaystyle \frac{n!}{k! \cdot (n-k)!} $
+$C(n, k) = \displaystyle \frac{n!}{k! \cdot (n-k)!}$
 
-- $ n $ ou $ I = 4 $
-- $ k = 2 $
-- $ C(n, k) = 6 $
+- $n$ ou $I = 4$
+- $k = 2$
+- $C(n, k) = 6$
 
 **Diferença Mínima Significativa (DMS):**
 
-$ \Delta = q \cdot \displaystyle \frac{S}{r^{0,5}} $
+$\huge \Delta = q \cdot \displaystyle \frac{S}{r^{0,5}}$
 
-- $ q $ - valor crítico da tabela
-- $ n_1 $ (número de médias) = 4
-- $ n_2 $ (gl denominador ou resíduo ou tratamento) = 20
-- $ \alpha = 0,05 $
-- $ \text{tab } q(n_1, n_2, \alpha) = 3,96 $
+- $q$ - valor crítico da tabela
+- $n_1$ (número de médias) = 4
+- $n_2$ (gl denominador ou resíduo ou tratamento) = 20
+- $\alpha = 0,05$
+- $\text{tab } q(n_1, n_2, \alpha) = 3,96$
 
 
 #### q-tab(4,20, 0.05)
@@ -252,7 +256,7 @@ $ \Delta = q \cdot \displaystyle \frac{S}{r^{0,5}} $
 
 
 
-$ \Delta = q \cdot \displaystyle\frac{S}{r^{0,5}} $
+$\huge \Delta = q \cdot \displaystyle\frac{S}{r^{0,5}}$
 
 - $\text{tab } q(n_1, n_2, \alpha) = 3,96$
 - $S = \sqrt{S^2}$ desvio padrão (raiz do quadrado médio ou variância resíduo) = 171,8646997
@@ -373,25 +377,6 @@ group1 group2  meandiff  p-adj    lower      upper    reject
 ------------------------------------------------------------
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 &nbsp;
