@@ -45,7 +45,7 @@ A distribuição t de Student é especialmente útil em situações em que a amo
 
 1. **Intervalo de Confiança para a Média ($\mu$) com Amostra Pequena:**
 
-   $\bar{X} \pm t \left( \frac{s}{\sqrt{n}} \right)$
+   $\huge\bar{X} \pm t \left( \frac{s}{\sqrt{n}} \right)$
    
    - **Variáveis:**
      - $\bar{X}$: Média da amostra
@@ -58,7 +58,7 @@ A distribuição t de Student é especialmente útil em situações em que a amo
 
 3. **Estatística de Teste t para a Média ($ \mu $):**
 
-   $t =\displaystyle \frac{\bar{X} - \mu_0}{\displaystyle\frac{s}{\sqrt{n}}}$
+   $\huge t =\displaystyle \frac{\bar{X} - \mu_0}{\displaystyle\frac{s}{\sqrt{n}}}$
    - **Variáveis:**
      - $\bar{X}$: Média da amostra
      - $\mu_0$: Valor sob a hipótese nula
@@ -78,7 +78,7 @@ A distribuição t de Student é frequentemente utilizada em inferência estatí
 
 O erro padrão da média (também conhecido como erro padrão da amostra ou desvio padrão padrão) é calculado usando a fórmula:
 
-$SE = \displaystyle \frac{s}{\sqrt{n}}$
+$\huge SE = \displaystyle \frac{s}{\sqrt{n}}$
 
 onde:
 - $s$ é o desvio padrão amostral,
@@ -92,7 +92,7 @@ Por exemplo, para um intervalo de confiança de 95% e uma amostra com $n$ graus 
 
 A fórmula geral para um intervalo de confiança é:
 
-$\bar{X} \pm t_{\alpha/2} \times SE$
+$\huge \bar{X} \pm t_{\alpha/2} \times SE$
 
    
 ---
@@ -103,7 +103,7 @@ $\bar{X} \pm t_{\alpha/2} \times SE$
 
 O intervalo de confiança para a diferença de médias de duas amostras independentes, quando as populações não têm variâncias iguais e a distribuição amostral segue uma distribuição t de Student, pode ser expresso da seguinte forma:
 
-$\displaystyle \bar{X}_1 - \bar{X}_2 \pm t \times \sqrt{\left(\frac{s_1^2}{n_1}\right) + \left(\frac{s_2^2}{n_2}\right)}$
+$\huge\displaystyle \bar{X}_1 - \bar{X}_2 \pm t \times \sqrt{\left(\frac{s_1^2}{n_1}\right) + \left(\frac{s_2^2}{n_2}\right)}$
 
 Onde:
 
