@@ -769,11 +769,11 @@ $Q = \displaystyle\sum_{i,k} \sum_{j,n} \sum_{1,r} X_{ijr}^2  = 9^2 + 7^2 + ... 
 
 #### Resolvendo e criando a Tabela ANOVA com 2 fatores com repetição:
 
-1. Soma Total dos Quadrados (SQT):
+Soma Total dos Quadrados (SQT):
 
 $SQT = Q - \displaystyle\frac{T^2}{nkr} = 493.3333333$ ; $\text{gl = } \ knr-1 = \ 23$
 
-3. Médias dos Quadrados para SQT (MQT):
+Médias dos Quadrados para SQT (MQT):
 
 $MQT = \displaystyle \frac{SQT}{knr-1} = 21.44927536$
 
@@ -781,32 +781,32 @@ $MQT = \displaystyle \frac{SQT}{knr-1} = 21.44927536$
 
 
 
-4. Soma dos Quadrados para Linhas (SQL):
+Soma dos Quadrados para Linhas (SQL):
 
 $SQL = \sum_{i,k} \displaystyle\frac{Ti^2}{nir} - \frac{T^2}{nkr} = 277.5833333$ ; $\text{gl = } \ k-1 = \ 2$
 
-6. Médias dos Quadrados para SQL (MQL):
+Médias dos Quadrados para SQL (MQL):
 
 $MQL = \displaystyle\frac{SQL}{k-1} = 138.7916667$
 
 ---
 
 
-7. Soma dos Quadrados para Colunas (SQC):
+Soma dos Quadrados para Colunas (SQC):
 
 $SQC = \displaystyle\sum_{j,n} \displaystyle\frac{Tj^2}{kjr} - \frac{T^2}{nkr} = 46.33333333$ ; $\text{gl = } \ n-1 = \ 3$
 
-9. Médias dos Quadrados para SQC (MQC):
+Médias dos Quadrados para SQC (MQC):
 
 $MQC = \displaystyle \frac{SQC}{n-1} = 15.44444444$
 
 ---
 
-10. Soma dos Quadrados para Tratamentos (SQtr):
+Soma dos Quadrados para Tratamentos (SQtr):
 
 $SQtr = \displaystyle\sum_{i,k} \sum_{j,n} \displaystyle \frac{Tij^2}{r} - T^2  = 405.3333333$ ; $\text{gl = } \ n.k-1 = \ 11$
 
-12. Médias dos Quadrados para SQtr (MQtr):
+Médias dos Quadrados para SQtr (MQtr):
 
 $MQtr = \displaystyle\frac{SQtr}{n.k-1} = 36.84848485$
 
@@ -814,22 +814,22 @@ $MQtr = \displaystyle\frac{SQtr}{n.k-1} = 36.84848485$
 
 
 
-13. Soma dos Quadrados para a Interação (SQI):
+Soma dos Quadrados para a Interação (SQI):
 
 $SQI = SQtr - SQL - SQC = 81.41666667$ ; $\text{gl:} \ (k-1) \times (n-1) = \ 6$
 
-15. Médias dos Quadrados para SQI (MQI):
+Médias dos Quadrados para SQI (MQI):
 
 $MQI = \displaystyle\frac{SQI}{(k-1) \times (n-1)} = 13.56944444$
 
 ---
 
 
-16. Soma dos Quadrados Residual (SQR):
+Soma dos Quadrados Residual (SQR):
 
 $SQR = SQT - SQtr = 88$ ; $\text{gl = } \ n.k.(r-1) = \ 12$
 
-18. Médias dos Quadrados para SQR (MQR):
+Médias dos Quadrados para SQR (MQR):
 
 $MQR = \displaystyle\frac{SQR}{n.k.(r-1)} = 7.333333333$
 
