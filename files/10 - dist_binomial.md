@@ -43,7 +43,7 @@ A distribuição binomial é um modelo de probabilidade discreta que descreve o 
 
 1. **Função de Probabilidade (PMF):**
 
-   $P(X = k) = \displaystyle\binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}$
+   $\huge P(X = k) = \displaystyle\binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}$
    
    - **Variáveis:**
      
@@ -59,7 +59,7 @@ A distribuição binomial é um modelo de probabilidade discreta que descreve o 
 
 3. **Função de Distribuição Cumulativa (CDF):**
 
-   $P(X \leq k) = \displaystyle\sum_{i=0}^{k} \displaystyle\binom{n}{i} \cdot p^i \cdot (1 - p)^{n - i}$
+   $\huge P(X \leq k) = \displaystyle\sum_{i=0}^{k} \displaystyle\binom{n}{i} \cdot p^i \cdot (1 - p)^{n - i}$
    
    - **Variáveis:**
      - $X$: Número de sucessos
@@ -75,7 +75,7 @@ A distribuição binomial é um modelo de probabilidade discreta que descreve o 
 
 Coeficiente binomial e é lido como "n escolha k". Representa o número de maneiras diferentes de escolher $k$ elementos de um conjunto de $n$ elementos. A fórmula é dada por:
 
-   $\displaystyle\binom{n}{k} = \displaystyle\frac{n!}{k!(n-k)!}$
+   $\huge \binom{n}{k} = \displaystyle\frac{n!}{k!(n-k)!}$
 
    onde $n!$ (lê-se "n fatorial") é o produto de todos os números inteiros de 1 a $n$. Isso leva em consideração as diferentes maneiras de escolher $k$ sucessos em $n$ tentativas, sem levar em conta a ordem em que ocorrem.
 
@@ -86,7 +86,7 @@ Coeficiente binomial e é lido como "n escolha k". Representa o número de manei
 
 A média ($\mu$) de uma distribuição binomial é o número esperado de sucessos em $n$ ensaios independentes. Matematicamente, é dado por:
 
-$\mu = n \cdot p$
+$\huge \mu = n \cdot p$
 
 onde:
 - $n$ é o número de ensaios (número de tentativas),
@@ -98,9 +98,9 @@ A média fornece uma medida de centralidade na distribuição binomial, indicand
 
 A variância ($\sigma^2$) e o desvio padrão ($\sigma$) são medidas de dispersão que indicam quão longe os valores da distribuição estão da média.
 
-$\sigma^2 = n \cdot p \cdot (1 - p)$
+$\huge \sigma^2 = n \cdot p \cdot (1 - p)$
 
-$\sigma = \sqrt{n \cdot p \cdot (1 - p)}$
+$\huge \sigma = \sqrt{n \cdot p \cdot (1 - p)}$
 
 onde:
 - $n$ é o número de ensaios,
@@ -115,7 +115,7 @@ Essas medidas são cruciais para entender a forma e a dispersão da distribuiç�
 
 1. **Teste de Hipótese para uma Proporção ($p$):**
 
-   $Z = \displaystyle\frac{\hat{p} - p_0}{\displaystyle\sqrt{\frac{p_0 \cdot (1 - p_0)}{n}}}$
+   $\huge Z = \displaystyle\frac{\hat{p} - p_0}{\displaystyle\sqrt{\frac{p_0 \cdot (1 - p_0)}{n}}}$
    
    - **Variáveis:**
      - $\hat{p}$: Proporção amostral de sucessos
@@ -146,7 +146,7 @@ Para resolver essas questões, podemos usar a distribuição de probabilidade bi
 
 A fórmula para a distribuição binomial é dada por:
 
-$P(X = k) = \displaystyle\binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}$
+$\huge P(X = k) = \displaystyle\binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}$
 
 onde:
 - $n$ é o número total de ensaios (número de peças na caixa),
@@ -158,7 +158,7 @@ Vamos calcular cada parte:
 
 a) Probabilidade de exatamente 3 peças defeituosas em uma caixa:
 
-$P(X = 3) = \binom{5}{3} \cdot (0.10)^3 \cdot (0.90)^2$
+$\huge P(X = 3) = \binom{5}{3} \cdot (0.10)^3 \cdot (0.90)^2$
 
 ```
 Probabilidade de exatamente 3 peças defeituosas: 0.0081
@@ -239,11 +239,11 @@ Se a probabilidade de um certo gado sofrer uma dada reação nociva, resultante 
 
 A probabilidade de exatamente 3 animais sofrerem a reação pode ser calculada utilizando a fórmula da distribuição binomial:
 
-$P(X = 3) = \binom{2000}{3} \cdot (0,001)^3 \cdot (1 - 0,001)^{2000 - 3}$
+$\huge P(X = 3) = \binom{2000}{3} \cdot (0,001)^3 \cdot (1 - 0,001)^{2000 - 3}$
 
 Substituindo os valores:
 
-$P(X = 3) = \binom{2000}{3} \cdot (0,001)^3 \cdot (0,999)^{1997}$
+$\huge P(X = 3) = \binom{2000}{3} \cdot (0,001)^3 \cdot (0,999)^{1997}$
 
 **Resultado:**
 
@@ -253,7 +253,7 @@ $P(X = 3) \approx 0.180537$
 
 A probabilidade de mais do que 2 animais sofrerem a reação pode ser calculada somando as probabilidades para $k = 3, 4, \ldots, 2000$:
 
-$P(X > 2) = P(X = 3) + P(X = 4) + \ldots + P(X = 2000)$
+$\huge P(X > 2) = P(X = 3) + P(X = 4) + \ldots + P(X = 2000)$
 
 **Resultado:**
 
@@ -327,11 +327,11 @@ $P(X \geq 2) = 1 - P(X < 2) =$ 1 - 0.3125 = 0.6875
 
 O número esperado de animais curados:
 
-$\mu = n \cdot p = 4 \cdot 0.5 = 2$ animais. 
+$\huge \mu = n \cdot p = 4 \cdot 0.5 = 2$ animais. 
  
 O desvio padrão ($\sigma$) é calculado como:
  
-$\sigma = \sqrt{n \cdot p \cdot (1 - p)}  =  \sqrt{4 \cdot 0.5 \cdot (1 - 0.5)} =  1.00$.
+$\huge \sigma = \sqrt{n \cdot p \cdot (1 - p)}  =  \sqrt{4 \cdot 0.5 \cdot (1 - 0.5)} =  1.00$.
 
 
 
