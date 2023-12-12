@@ -109,8 +109,8 @@ Dado que o desvio padrão populacional é conhecido e é de R$1.100,00, realize 
 - Intervalo de Confiança ($IC$): 95%
 - Desvio Padrão Populacional ($\sigma$): R$1.100,00
 - Média Amostral ($\bar{x}$): R$7.000,00
-- Hipótese Nula ($H_0$): $ \mu = 5.800 $
-- Hipótese Alternativa ($H_1$): $ \mu \neq 5.800 $
+- Hipótese Nula ($H_0$): $\mu = 5.800$
+- Hipótese Alternativa ($H_1$): $\mu \neq 5.800$
 - Nível de Significância ($\alpha$): 0.05
 
 **Perguntas:**
@@ -163,33 +163,33 @@ Rejeitar a hipótese nula
 
 **1. Hipóteses:**
 
-$ H_0: \mu = 5.800 $
-$ H_1: \mu \neq 5.800 $
+$H_0: \mu = 5.800$
+$H_1: \mu \neq 5.800$
 
 **2. Estatística de Teste Z:**
 
-$ Z = \displaystyle \frac{\bar{x} - \mu_0}{\frac{\sigma}{\sqrt{n}}} $
+$Z = \displaystyle \frac{\bar{x} - \mu_0}{\frac{\sigma}{\sqrt{n}}}$
 
 Substituindo os valores conhecidos:
 
-$ Z = \frac{7.000 - 5.800}{\frac{1.100}{\sqrt{100}}} $
-$ Z = \frac{1.200}{110} $
-$ Z \approx 10,91 $
+$Z = \frac{7.000 - 5.800}{\frac{1.100}{\sqrt{100}}}$
+$Z = \frac{1.200}{110}$
+$Z \approx 10,91$
 
 **3. P-valor:**
 
 ### Estatística de Teste: Z = 10,91
 
-$ p\text{-valor} = P(|10,91|) > 5.214703332852256e-28 $  
+$p\text{-valor} = P(|10,91|) > 5.214703332852256e-28$  
 
-$ p\text{-valor} = 5.214703332852256e-28$
+$p\text{-valor} = 5.214703332852256e-28$
 
 
 **4. Decisão:**
 
-Comparando o $ p\text{-valor} = (5.214703332852256e-28) $ com o nível de significância ($\alpha = 0.05$):
+Comparando o $p\text{-valor} = (5.214703332852256e-28)$ com o nível de significância ($\alpha = 0.05$):
 
-$ p\text{-valor} > \alpha $
+$p\text{-valor} > \alpha$
 
 Portanto, REJEITAMOS a hipótese nula.
 
@@ -214,7 +214,7 @@ Vamos realizar um teste de hipótese para verificar se a média amostral de peso
 - Nível de significância ($\alpha$): 0,05
 
 **Estatística de Teste ( Z ):**
-$ Z = \displaystyle \frac{\bar{x} - \mu_0}{\frac{s}{\sqrt{n}}} $
+$Z = \displaystyle \frac{\bar{x} - \mu_0}{\frac{s}{\sqrt{n}}}$
 
 Vamos calcular o valor crítico e o p-valor para tomar uma decisão.
 
@@ -283,11 +283,11 @@ Suponha que uma pesquisa inicial tenha sido realizada para uma eleição de cand
 - Candidato B: 330 votos
 - Não sabem: 20 votos
 
-A pesquisa inicial indicou que a proporção de apoio ao Candidato A foi de $ \displaystyle \frac{650}{1000} = 0,65 $.
+A pesquisa inicial indicou que a proporção de apoio ao Candidato A foi de $\displaystyle \frac{650}{1000} = 0,65$.
 
 No entanto, o Candidato B, desconfiado, refaz a pesquisa e descobre que a verdadeira proporção de votos para o Candidato A é de 0,67.
 
-Vamos realizar um teste de significância para avaliar se a diferença entre a proporção observada e a proporção alegada pelo Candidato B é estatisticamente significativa com um nível de significância de $ \alpha = 0,05 $.
+Vamos realizar um teste de significância para avaliar se a diferença entre a proporção observada e a proporção alegada pelo Candidato B é estatisticamente significativa com um nível de significância de $\alpha = 0,05$.
 
 **Solução:**
 
@@ -295,31 +295,31 @@ Vamos realizar um teste de significância para avaliar se a diferença entre a p
 - Hipótese Nula ($H_0$): A proporção de apoio ao Candidato A é igual a 0,65.
 - Hipótese Alternativa ($H_1$): A proporção de apoio ao Candidato A é diferente de 0,65.
 
-$H_0: p = 0,65 $
-$H_1: p \neq 0,65 $
+$H_0: p = 0,65$
+$H_1: p \neq 0,65$
 
 **2. Estatística de Teste:**
 
-$Z = \displaystyle \frac{\hat{p} - p_0}{\sqrt{\frac{p_0 \cdot (1 - p_0)}{n}}} $
+$Z = \displaystyle \frac{\hat{p} - p_0}{\sqrt{\frac{p_0 \cdot (1 - p_0)}{n}}}$
 
 Substituindo os valores conhecidos:
-$Z = \displaystyle \frac{0,67 - 0,65}{\sqrt{\frac{0,65 \cdot (1 - 0,65)}{1000}}} $
+$Z = \displaystyle \frac{0,67 - 0,65}{\sqrt{\frac{0,65 \cdot (1 - 0,65)}{1000}}}$
 
 
 **3. P-valor:**
 
 ### Estatística de Teste: Z = 1,3260
 
-$ p\text{-valor} = P(|1,3260|) > 1,8152 $  
+$p\text{-valor} = P(|1,3260|) > 1,8152$  
 
-$ p\text{-valor} = 1.8152$
+$p\text{-valor} = 1.8152$
 
 
 **4. Decisão:**
 
-Comparando o $ p\text{-valor} = (1.8152) $ com o nível de significância ($\alpha = 0.05$):
+Comparando o $p\text{-valor} = (1.8152)$ com o nível de significância ($\alpha = 0.05$):
 
-$ p\text{-valor} > \alpha $
+$p\text{-valor} > \alpha$
 
 Portanto, NÃO rejeitamos a hipótese nula.
 
@@ -391,7 +391,7 @@ Suponha que você esteja conduzindo uma pesquisa sobre a preferência de método
 2. **Intervalo de Confiança:**
    - Utilize a fórmula do intervalo de confiança para a proporção:
 
-     $ \text{Intervalo} = \hat{p} \pm Z \times \sqrt{\displaystyle \frac{\hat{p} \times (1 - \hat{p})}{n}} $
+     $\text{Intervalo} = \hat{p} \pm Z \times \sqrt{\displaystyle \frac{\hat{p} \times (1 - \hat{p})}{n}}$
    - Calcule os limites inferior e superior do intervalo de confiança.
 
 ```python
@@ -427,7 +427,7 @@ Intervalo de Confiança: (0.6204, 0.6796)
 
 1. **Estatística de Teste Z:**
    - Utilize a fórmula para a estatística de teste Z para proporções:
-     $ Z =\displaystyle \frac{\hat{p} - p_0}{\sqrt{\frac{p_0 \times (1 - p_0)}{n}}} $
+     $Z =\displaystyle \frac{\hat{p} - p_0}{\sqrt{\frac{p_0 \times (1 - p_0)}{n}}}$
    - $p_0$ é a proporção sob a hipótese nula.
 
 ```python
@@ -463,31 +463,6 @@ P-valor do Teste: 0.0006
 
 **Conclusão:**
 Com base nos resultados do teste de hipótese, há evidências estatísticas para concluir que a proporção de consumidores que preferem cartão de crédito é significativamente maior que 60%. O p-valor baixo sugere que a diferença observada na preferência de pagamento não pode ser atribuída apenas ao acaso, fornecendo suporte à hipótese alternativa de que mais de 60% dos consumidores preferem cartão de crédito.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
