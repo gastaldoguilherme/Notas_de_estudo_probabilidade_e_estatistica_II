@@ -45,7 +45,11 @@ As métricas de erro são utilizadas para avaliar o desempenho de modelos predit
 ### 5. **Coeficiente de Determinação ($R^2$):**
    - **Fórmula:**
    
-     $R^2 = 1 - \huge\frac{\huge\sum\limits_{i=1}^{n} (y_i - \hat{y}_i)^2}{\huge\sum\limits_{i=1}^{n} (y_i - \bar{y})^2}$
+
+
+![Alt text](/assets/16-1.png)
+
+
 
 
    - **Descrição:**
